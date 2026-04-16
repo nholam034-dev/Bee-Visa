@@ -1,6 +1,7 @@
 
 import React, { createContext, useContext, useState, useEffect } from "react";
 import { PAGES, COUNTRIES_SUMMARY, SERVICE_DETAILS, DEFAULT_SITE_CONFIG } from "../constants";
+import { DEFAULT_BLOGS } from "../blog_data";
 import { PageData, CountrySummary, ServiceDetailData, LeadData, SiteConfig, UserProfile, UserRole, BlogPost } from "../types";
 import { db, auth } from "../firebase";
 import firebase from "firebase/compat/app";
@@ -41,7 +42,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [serviceDetails, setServiceDetails] = useState<Record<string, ServiceDetailData>>(SERVICE_DETAILS);
   const [leads, setLeads] = useState<LeadData[]>([]);
   const [siteConfig, setSiteConfig] = useState<SiteConfig>(DEFAULT_SITE_CONFIG);
-  const [blogs, setBlogs] = useState<BlogPost[]>([]);
+  const [blogs, setBlogs] = useState<BlogPost[]>(DEFAULT_BLOGS);
   const [isLoading, setIsLoading] = useState(true);
   
   const [currentUserRole, setCurrentUserRole] = useState<UserRole | null>(null);
@@ -116,13 +117,27 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
       // 5. Fetch Blogs
       try {
           const blogsSnapshot = await db.collection("blogs").orderBy("createdAt", "desc").get();
-          const fetchedBlogs: BlogPost[] = [];
-          blogsSnapshot.forEach((doc: any) => {
-              fetchedBlogs.push({ id: doc.id, ...doc.data() } as BlogPost);
-          });
-          setBlogs(fetchedBlogs);
+          if (!blogsSnapshot.empty) {
+              const fetchedBlogs: BlogPost[] = [];
+              blogsSnapshot.forEach((doc: any) => {
+                  fetchedBlogs.push({ id: doc.id, ...doc.data() } as BlogPost);
+              });
+              
+              // Merge DEFAULT_BLOGS with fetched blogs (fetch takes precedence)
+              const mergedBlogs = [...fetchedBlogs];
+              DEFAULT_BLOGS.forEach(defaultBlog => {
+                  if (!mergedBlogs.find(b => b.id === defaultBlog.id)) {
+                      mergedBlogs.push(defaultBlog);
+                  }
+              });
+              // Sort by date newly added
+              mergedBlogs.sort((a, b) => b.createdAt - a.createdAt);
+              setBlogs(mergedBlogs);
+          } else {
+              setBlogs(DEFAULT_BLOGS);
+          }
       } catch (err) {
-          console.log("Could not fetch blogs", err);
+          console.log("Could not fetch blogs, using defaults", err);
       }
   
     } catch (error) {
