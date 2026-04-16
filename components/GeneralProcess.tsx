@@ -68,7 +68,7 @@ export const GeneralProcess: React.FC = () => {
   return (
     <div className="w-full bg-white min-h-screen font-sans">
         {/* Hero Section */}
-        <div className="bg-[#002f34] relative overflow-hidden py-20 lg:py-28">
+        <div className="bg-[#002f34] relative overflow-hidden pt-20 pb-32 lg:pt-28 lg:pb-40">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(253,185,19,0.1),transparent_50%)]"></div>
             <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]"></div>
             
@@ -83,10 +83,20 @@ export const GeneralProcess: React.FC = () => {
                 <p className="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-light animate-[fadeInUp_0.5s_0.4s]">
                     Chúng tôi đơn giản hóa quy trình xin visa phức tạp thành một trải nghiệm minh bạch, chuyên nghiệp và an tâm tuyệt đối.
                 </p>
+
+                {/* Infographic Image Floating */}
+                <div className="mt-12 md:mt-16 -mb-48 md:-mb-64 relative z-20 animate-[fadeInUp_0.5s_0.6s]">
+                     <div className="absolute inset-0 bg-secondary/30 blur-[120px] rounded-full scale-75"></div>
+                     <img 
+                        src="/images/visa_process_infographic.png" 
+                        alt="Beetours Infographic 4 Bước" 
+                        className="relative z-10 w-full max-w-5xl mx-auto rounded-2xl shadow-[0_40px_80px_-20px_rgba(0,0,0,0.5)] transform hover:-translate-y-2 transition-transform duration-500 border border-white/10" 
+                     />
+                </div>
             </div>
             
             {/* Curved Divider */}
-            <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
+            <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0] z-0">
                 <svg className="relative block w-[calc(100%+1.3px)] h-[60px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="fill-white"></path>
                 </svg>
@@ -94,7 +104,7 @@ export const GeneralProcess: React.FC = () => {
         </div>
 
         {/* Timeline Section */}
-        <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8 py-16 pt-56 md:pt-72">
             <div className="relative">
                 {/* Central Line */}
                 <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-1 bg-gray-100 md:-translate-x-1/2 rounded-full">
