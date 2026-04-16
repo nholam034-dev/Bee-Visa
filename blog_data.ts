@@ -60,5 +60,53 @@ export const DEFAULT_BLOGS: BlogPost[] = [
     createdAt: Date.now() - 1000 * 60 * 60 * 24 * 12,
     published: true,
     author: "Eva Tưởng - Chuyên gia Châu Âu"
+  },
+  {
+    id: "blog_6_visa_nhat_ban_single_multiple",
+    slug: "phong-van-visa-nhat-ban-single-multiple-tieu-chuan",
+    title: "Visa Nhật Bản 2026: Phân biệt Single, Multiple và 'cái bẫy' tài chính",
+    excerpt: "Xin visa Nhật Bản không khó, nhưng làm thế nào để được cấp Multiple ngay lần đầu? Tiết lộ tiêu chuẩn xét duyệt ngầm của Đại sứ quán từ các chuyên gia.",
+    content: "<p>Nhật Bản từ lâu đã áp dụng chính sách nới lỏng thị thực cho du khách Việt Nam. Tuy nhiên, sự khác biệt giữa Visa Single (nhập cảnh một lần) và Multiple (nhiều lần) lại là ranh giới mà không nhiều người nắm rõ.</p>\\n\\n<h3>1. Cái Ưu Tiên Của Multiple Visa</h3>\\n<p>Nếu bạn được cấp Multiple 3 năm hoặc 5 năm, đó là tấm kim bài. Tuy nhiên, ĐSQ Nhật Bản xét duyệt dựa trên <strong>năng lực tài chính và lịch sử du lịch thực tế</strong>. Nhiều người nộp chứng minh thu nhập hàng trăm triệu nhưng vẫn chỉ nhận được Single, vì sao? Bởi vì tài khoản của bạn thiếu <em>sự thường xuyên</em> và không có lịch sử bay đi các nước phát triển như Mỹ, Úc, Châu Âu.</p>\\n\\n<h3>2. 'Cái Bẫy' Sổ Tiết Kiệm</h3>\\n<p>Giống như Hàn Quốc hay Schengen, Nhật Bản không chỉ nhìn vào con số cuối cùng trong sổ tiết kiệm. Lãnh sự cực kỳ chú trọng vào giấy xác nhận thu nhập từ cơ quan thuế (Vietnamese Tax Return) và sao kê nhận lương liên tục 6 tháng. Một sổ tiết kiệm mới tinh vừa gửi 1 ngày trước khi nộp hồ sơ gần như bằng không trong mắt người kiểm duyệt.</p>\\n\\n<h3>3. Giải pháp từ Beetours</h3>\\n<p>Nếu mục tiêu của bạn là Multiple, Beetours sẽ hỗ trợ bạn xây dựng hồ sơ chứng minh thu nhập lũy tiến. Còn nếu hồ sơ chỉ ở mức cơ bản, chúng tôi luôn khuyên bạn bắt đầu với Single. Đừng 'tham bát bỏ mâm' để rồi bị từ chối visa oan uổng. Một khi có thẻ Single Nhật và từng đi đàng hoàng, lần sau xin Multiple sẽ là điều hiển nhiên!</p>",
+    coverImage: "/images/destinations/nhat-ban.png",
+    category: "Phân Tích",
+    createdAt: Date.now() - 1000 * 60 * 60 * 24 * 16,
+    published: true,
+    author: "Tetsuya Trần - Chuyên gia Nhật Bản"
+  },
+  {
+    id: "blog_7_canada_super_visa",
+    slug: "canada-super-visa-bao-lanh-cha-me-ong-ba",
+    title: "Giải mã 'Siêu Visa' (Super Visa) Canada: Tấm vé vàng bảo lãnh cha mẹ",
+    excerpt: "Không cần phải chờ đợi bốc thăm bảo lãnh đoàn tụ, Super Visa mang đến cho cha mẹ và ông bà cơ hội ở Canada liên tục tới 5 năm mỗi lần nhập cảnh.",
+    content: "<p>Nhập cư Canada luôn là khát khao của rất nhiều gia đình Việt. Tuy nhiên, thay vì phải chạy theo chương trình bảo lãnh đoàn tụ cha mẹ (Parents and Grandparents Program) với tỉ lệ chọi khốc liệt và phải bốc thăm ngẫu nhiên, Thường trú nhân/Công dân Canada có một vũ khí quyền lực khác: <strong>Super Visa</strong>.</p>\\n\\n<h3>1. Super Visa Khác Gì Visa Thăm Thân Bình Thường?</h3>\\n<p>Visa du lịch thăm thân truyền thống (Visitor Visa) có thời hạn 10 năm nhưng mỗi lần nhập cảnh đa số đều bị đóng mộc giới hạn ở lại tối đa 6 tháng. Với Super Visa, cha mẹ bạn có thể lưu trú liên tục lên tới <strong>5 năm cho một lần nhập cảnh</strong>. Điều này giải quyết dư dứt điểm bài toán phải bay đi bay lại (flagpoling) để gia hạn thẻ cư trú.</p>\\n\\n<h3>2. Rào Cản Lớn Nhất Bị Đánh Rớt</h3>\\n<p>Super Visa không dễ ăn! Beetours đã nhận hàng trăm hồ sơ tự nộp rớt với lý do chính: Không đáp ứng đủ Ngưỡng Thu Nhập Tối Thiểu (LICO). Người bảo lãnh ở Canada phải chứng minh Thu nhập tối thiểu theo bảng lương T4 (Kê khai thuế Canada). </p>\\n<p>Hơn thế nữa, bảo hiểm y tế bắt buộc là một khoản chi phí khá lớn: bạn phải mua bảo hiểm trị giá 100,000 CAD có hiệu lực nguyên năm với công ty Canada.</p>\\n\\n<h3>3. Đồng Hành Cùng Beetours</h3>\\n<p>Với đội ngũ mạng lưới tại Canada am hiểu luật IRCC, chúng tôi giúp bạn chuẩn bị LICO hoàn hảo, rà soát T4, Letter of Invitation và liên kết chọn gói bảo hiểm y tế tối ưu chi phí nhưng đạt chuẩn duyệt Super Visa. Đừng để rủi ro tài liệu làm trì hoãn mong mỏi đoàn tụ gia đình.</p>",
+    coverImage: "/images/destinations/canada.png",
+    category: "Chính Sách",
+    createdAt: Date.now() - 1000 * 60 * 60 * 24 * 18,
+    published: true,
+    author: "Liam Lê - Khối Five Eyes"
+  },
+  {
+    id: "blog_8_schengen_truot_phap",
+    slug: "truot-visa-phap-thi-nop-lai-nuoc-schengen-nao",
+    title: "Rớt Visa Pháp: Tuyệt đối đừng 'chạy' sang nộp ngay Ý hay Hà Lan!",
+    excerpt: "Hành động nộp bù hồ sơ Schengen sang một đại sứ quán khác khi vừa bị từ chối là sai lầm chết người đưa bạn vào danh sách đen của Hệ thống VIS.",
+    content: "<p>Schengen là một khối chung không chỉ đường biên giới mà chung cả <strong>VIS (Visa Information System)</strong>. Mọi vết nhơ, mọi lời khai, mọi email liên hồi của bạn tới ĐSQ Đức, Pháp hay Tây Ban Nha đều được lưu lại và chia sẻ dùng chung trong nháy mắt.</p>\\n\\n<h3>1. Vòng Xoáy 'Nộp Lại Đợi Hên'</h3>\\n<p>Tâm lý thường thấy sau khi bị rớt Visa Pháp là lập tức đổi booking sang một nước có 'tiếng' là dễ dãi như Ý, Hà Lan và làm lại 1 cuốn hồ sơ tương tự để nộp ngay tháng sau. Khi Lãnh sự nước mới tiếp nhận, họ chỉ cần gõ Passport của bạn, màn hình sẽ hiện lên dấu mộc từ chối đỏ chót của Pháp kèm ghi chú của viên chức cũ.</p>\\n<p>Việc đổi lịch trình chớp nhoáng chứng tỏ với họ rằng: <em>Bạn hoàn toàn không có nhu cầu du lịch thực sự ở Pháp hay Ý, mục đích của bạn chỉ đen tối là lấy bằng được cái tem Visa để lách vào Châu Âu</em>. Ngay lập tức, Lãnh sự mới sẽ từ chối bạn lần 2, thậm chí đưa bạn vào Blacklist cấm xin visa tới 5 năm do 'cung cấp thông tin giả mạo mục đích chuyến đi'.</p>\\n\\n<h3>2. Hành Động Đúng Đắn</h3>\\n<p>Nếu rớt Visa Pháp, hãy đối mặt với nó. Tại Beetours, nguyên tắc của chúng tôi là: <strong>Rớt ở đâu, đứng lên ở đó!</strong> Bạn phải phân tích lá thư từ chối (Refusal Letter) để xem họ gạch ở mục nào. Đa số là mục 8 hoặc 9 (Không tin tưởng mục đích chuyến đi/tài chính). Bạn phải bổ sung thêm các giấy tờ thuế, sao kê giải trình. Sau đó, nộp ĐÚNG LẠI tại ĐSQ Pháp kèm theo Thư Giải Trình <em>(Appeal Letter)</em> để bẻ gãy mọi quy chụp của họ lần trước.</p>",
+    coverImage: "/images/destinations/chau-au.png",
+    category: "Cảnh Báo",
+    createdAt: Date.now() - 1000 * 60 * 60 * 24 * 22,
+    published: true,
+    author: "Eva Tưởng - Chuyên gia Châu Âu"
+  },
+  {
+    id: "blog_9_anh_quoc_freelancer",
+    slug: "chung-minh-tai-chinh-visa-anh-cho-gen-z-freelancer",
+    title: "Visa Anh Quốc (UK): Gen Z và Freelancer làm sao chứng minh công việc cực mạnh?",
+    excerpt: "Lãnh sự quán vương quốc Anh chưa bao giờ có ác cảm với Freelancer. Cái họ ghét là sự mập mờ trong nguồn gốc dòng tiền. Đây là cách giải bài toán chứng minh thu nhập vô hình.",
+    content: "<p>Thế hệ Gen Z hiện nay nổi trội với công việc tự do (Freelancer) đem lại mức thu nhập cực kỳ khủng: Streamer, Youtuber, Chạy Ads, Kinh doanh Online... Tài khoản của bạn có thể vài tỷ đồng, nhưng việc xin Visa UK hay khối Five Eyes lại cực kỳ chật vật so với một nhân viên văn phòng lương 15 triệu.</p>\\n\\n<h3>1. Nghịch Lý Của Thu Nhập Cao</h3>\\n<p>Lãnh sự quán luôn theo hệ tư duy truyền thống: Thu nhập + Đóng thuế = Hợp pháp. Nếu một tháng có 10 lệnh chuyển khoản ghi 'ck tien hang', 'Thanh toan job', nhưng bạn không có Giấy ĐKKD, không nộp Thuế Thu Nhập Cá Nhân — bạn đang hoạt động trong 'vùng xám'. Lãnh sự UK sẽ từ chối vì họ đánh giá bạn không có yếu tố 'ràng buộc chặt chẽ với quê hương'.</p>\\n\\n<h3>2. Mẹo Xử Lý Hồ Sơ 'Vô Hình'</h3>\\n<p>Để cứu vãn tính định hình của nghề Freelancer, đội ngũ tại Beetours đưa ra 3 bước bảo vệ vững chắc:</p>\\n<ul>\\n  <li><strong>Chụp màn hình Back-office:</strong> Tất cả giao dịch qua Upwork, Youtube Studio, Facebook Ads Manager... phải được in ra và đóng dấu sao y công chứng kèm bản dịch để chứng minh nguồn thu.</li>\\n  <li><strong>Hợp đồng thời vụ:</strong> Gom lại mọi hợp đồng cộng tác viên, hợp đồng dịch vụ mà bạn đã ký kết thực tế với các đơn vị.</li>\\n  <li><strong>Đóng Thuế Tự Nguyện:</strong> Hãy mang các chứng từ thu nhập lên Chi cục Thuế để xin kê khai và đóng Thuế thu nhập cá nhân. Tờ Giấy nộp tiền vào ngân sách nhà nước chính là tờ 'kim bài miễn tử' uy lực bậc nhất trong hồ sơ xin Visa của Freelancer.</li>\\n</ul>\\n<p>Freelancer không phải là điểm yếu, mà là một thử thách cần được phơi bày một cách thông minh, có hệ thống theo 'đúng ngạch' mà chính quyền phương Tây mong đợi. Đội ngũ Beetours đã hỗ trợ không ít Hot Tiktoker xin visa Anh Quốc thành công mà không có một bảng lương theo chuẩn truyền thống nào!</p>",
+    coverImage: "/images/destinations/anh-quoc.png",
+    category: "Kinh Nghiệm",
+    createdAt: Date.now() - 1000 * 60 * 60 * 24 * 25,
+    published: true,
+    author: "Tony Trần - Chuyên gia Five Eyes"
   }
 ];
