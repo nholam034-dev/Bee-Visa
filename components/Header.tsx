@@ -140,7 +140,7 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, onOpenModal }) => {
              </button>
              
              <button 
-                onClick={() => onNavigate('kinh-nghiem-visa')}
+                onClick={() => onNavigate('blog')}
                 className={`text-sm font-bold uppercase tracking-wide transition-colors ${activePage === 'kinh-nghiem-visa' ? 'text-primary' : 'text-slate-700 hover:text-primary'}`}
              >
                 Kinh Nghiệm
@@ -185,6 +185,7 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, onOpenModal }) => {
               <button onClick={() => {onNavigate('home'); setIsMenuOpen(false);}} className="text-left px-4 py-3 text-sm font-bold text-slate-700 hover:bg-gray-50 rounded-lg">Trang Chủ</button>
               <button onClick={() => {onNavigate('process'); setIsMenuOpen(false);}} className="text-left px-4 py-3 text-sm font-bold text-slate-700 hover:bg-gray-50 rounded-lg">Quy Trình</button>
                <button onClick={() => {onNavigate('contact'); setIsMenuOpen(false);}} className="text-left px-4 py-3 text-sm font-bold text-slate-700 hover:bg-gray-50 rounded-lg">Liên Hệ</button>
+               <button onClick={() => {onNavigate('blog'); setIsMenuOpen(false);}} className="text-left px-4 py-3 text-sm font-bold text-slate-700 hover:bg-gray-50 rounded-lg">Kinh Nghiệm</button>
               <div className="px-4 py-2">
                   <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Chọn Quốc Gia</p>
                   <div className="grid grid-cols-2 gap-2">
