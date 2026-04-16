@@ -142,3 +142,16 @@ export interface UserProfile {
   displayName?: string;
   createdAt?: any;
 }
+
+export interface BlogPost {
+  id: string;
+  slug: string;
+  title: string;
+  excerpt: string;
+  content: string; // Markdown / HTML
+  coverImage: string;
+  category: 'Kinh Nghiệm' | 'Cảnh Báo' | 'Phân Tích' | 'Chính Sách';
+  createdAt: number;
+  published: boolean;
+  author: string;
+}

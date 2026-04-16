@@ -4,6 +4,7 @@ import { useData } from "../contexts/DataContext";
 import { auth, initError } from "../firebase";
 import { PageData, ServiceItem, LeadData, SiteConfig, UserRole, ServiceDetailData } from "../types";
 import { ImageUploader } from "./ImageUploader";
+import { AdminBlog } from "./AdminBlog";
 
 interface AdminDashboardProps {
     onNavigateHome?: () => void;
@@ -42,7 +43,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onNavigateHome }
   const [manualAppId, setManualAppId] = useState("");
 
   // Dashboard State
-  const [activeTab, setActiveTab] = useState<'content' | 'leads' | 'settings' | 'account' | 'users'>('content');
+  const [activeTab, setActiveTab] = useState<'content' | 'leads' | 'settings' | 'account' | 'users' | 'blog'>('content');
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   
   // Content Editing State

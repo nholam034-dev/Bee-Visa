@@ -1,11 +1,14 @@
 
 import React, { createContext, useContext, useState, useEffect } from "react";
 import { PAGES, COUNTRIES_SUMMARY, SERVICE_DETAILS, DEFAULT_SITE_CONFIG } from "../constants";
-import { PageData, CountrySummary, ServiceDetailData, LeadData, SiteConfig, UserProfile, UserRole } from "../types";
+import { PageData, CountrySummary, ServiceDetailData, LeadData, SiteConfig, UserProfile, UserRole, BlogPost } from "../types";
 import { db, auth } from "../firebase";
 import firebase from "firebase/compat/app";
 
 interface DataContextType {
+  blogs: BlogPost[];
+  saveBlogPost: (blog: BlogPost) => Promise<void>;
+  deleteBlogPost: (id: string) => Promise<void>;
   pages: Record<string, PageData>;
   countries: CountrySummary[];
   serviceDetails: Record<string, ServiceDetailData>;
@@ -38,6 +41,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [serviceDetails, setServiceDetails] = useState<Record<string, ServiceDetailData>>(SERVICE_DETAILS);
   const [leads, setLeads] = useState<LeadData[]>([]);
   const [siteConfig, setSiteConfig] = useState<SiteConfig>(DEFAULT_SITE_CONFIG);
+  const [blogs, setBlogs] = useState<BlogPost[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   
   const [currentUserRole, setCurrentUserRole] = useState<UserRole | null>(null);
@@ -108,6 +112,19 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
           console.log("Could not fetch leads (permission issues or collection empty)", err);
       }
       
+    
+      // 5. Fetch Blogs
+      try {
+          const blogsSnapshot = await db.collection("blogs").orderBy("createdAt", "desc").get();
+          const fetchedBlogs: BlogPost[] = [];
+          blogsSnapshot.forEach((doc: any) => {
+              fetchedBlogs.push({ id: doc.id, ...doc.data() } as BlogPost);
+          });
+          setBlogs(fetchedBlogs);
+      } catch (err) {
+          console.log("Could not fetch blogs", err);
+      }
+  
     } catch (error) {
       if (error.message !== "Firebase not configured") {
         console.error("Error fetching data from Firebase:", error);
@@ -147,6 +164,35 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
       }
   };
 
+  
+  const saveBlogPost = async (blog: BlogPost) => {
+      if (!db) { alert("Thiếu Firebase"); return; }
+      try {
+          await db.collection("blogs").doc(blog.id).set(blog);
+          setBlogs(prev => {
+              const existingIndex = prev.findIndex(b => b.id === blog.id);
+              if (existingIndex >= 0) {
+                  const newBlogs = [...prev];
+                  newBlogs[existingIndex] = blog;
+                  return newBlogs;
+              }
+              return [blog, ...prev];
+          });
+      } catch (err) {
+          console.error("Error saving blog", err); throw err;
+      }
+  };
+
+  const deleteBlogPost = async (id: string) => {
+      if (!db) return;
+      try {
+          await db.collection("blogs").doc(id).delete();
+          setBlogs(prev => prev.filter(b => b.id !== id));
+      } catch (err) {
+          console.error("Error deleting blog", err); throw err;
+      }
+  };
+  
   const saveSiteConfig = async (config: SiteConfig) => {
     if (!db) return;
     try {
@@ -324,6 +370,10 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
         currentUserRole, userList,
         refreshData, savePage, saveServiceDetail, saveSiteConfig, addLead, updateLeadStatus, seedDatabase,
         checkUserRole, createSystemUser, deleteSystemUser, refreshUserList
+    ,
+      blogs,
+      saveBlogPost,
+      deleteBlogPost
     }}>
       {children}
     </DataContext.Provider>

@@ -15,6 +15,8 @@ import { ConsultationModal } from "./components/ConsultationModal";
 import { AdminDashboard } from "./components/AdminDashboard";
 import { LandingPage } from "./components/LandingPage";
 import { ContactWidget } from "./components/ContactWidget";
+import { BlogList } from "./components/BlogList";
+import { BlogPostDetail } from "./components/BlogPostDetail";
 import { SEOHead } from "./components/SEOHead";
 import { DataProvider, useData } from "./contexts/DataContext";
 import { SERVICE_DETAILS, COUNTRIES_SUMMARY, PAGES as FALLBACK_PAGES } from "./constants";
@@ -46,6 +48,7 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     else if (pageId === 'contact') navigate('/lien-he');
     else if (pageId === 'process') navigate('/quy-trinh');
     else if (pageId === 'admin') navigate('/admin');
+    else if (pageId === 'blog') navigate('/kinh-nghiem-visa');
     else if (pageId === 'landing') navigate('/landing');
     else if (SERVICE_DETAILS[pageId]) {
       const detail = SERVICE_DETAILS[pageId];
@@ -144,6 +147,20 @@ const ServiceDetailPage: React.FC<{ explicitDetailId?: string; onNavigate?: Func
   );
 };
 
+
+const BlogListPage: React.FC<{ onNavigate?: Function }> = ({ onNavigate }) => (
+  <>
+    <SEOHead customTitle="Kinh Nghiệm & Phân Tích Thực Chiến | Beetours Vietnam" />
+    <BlogList onNavigate={onNavigate as any} />
+  </>
+);
+
+const BlogDetailPage: React.FC<{ onNavigate?: Function }> = ({ onNavigate }) => (
+  <>
+    <BlogPostDetail onNavigate={onNavigate as any} />
+  </>
+);
+
 const ProcessPage: React.FC = () => (
   <>
     <SEOHead />
@@ -214,6 +231,9 @@ const AppRoutes: React.FC = () => {
       {/* Public pages — with layout */}
       <Route path="/" element={<MainLayout><HomePage /></MainLayout>} />
       <Route path="/quy-trinh" element={<MainLayout><ProcessPage /></MainLayout>} />
+            <Route path="/kinh-nghiem-visa" element={<MainLayout><BlogListPage /></MainLayout>} />
+            <Route path="/kinh-nghiem-visa/:slug" element={<MainLayout><BlogDetailPage /></MainLayout>} />
+    
       <Route path="/lien-he" element={<MainLayout><ContactPage /></MainLayout>} />
 
       {/* Country pages — Generate exact routes since RRv6 doesn't support partial dynamic segments like /visa-:slug */}

@@ -20,6 +20,8 @@ const ProfileAssessment = ({ onFinish, onBack }: { onFinish: (result: any) => vo
         ageGroup: "",
         maritalStatus: "",
         jobType: "",
+        visaRefusal: "none",
+        contactTime: "any",
         socialInsurance: "", // VssID
         finance: "",
         travelHistory: "",
@@ -27,7 +29,7 @@ const ProfileAssessment = ({ onFinish, onBack }: { onFinish: (result: any) => vo
         phone: ""
     });
 
-    const totalSteps = 7; 
+    const totalSteps = 8; 
 
     // Helper to get labels for summary
     const getCountryName = (id: string) => COUNTRIES_SUMMARY.find(c => c.id === id)?.name || id;
@@ -53,6 +55,7 @@ const ProfileAssessment = ({ onFinish, onBack }: { onFinish: (result: any) => vo
     };
 
     const calculateScore = () => {
+        
         let score = 50; 
         let advice = [];
         const difficultCountries = ['usa', 'uk', 'canada', 'australia', 'newzealand', 'schengen'];
@@ -61,14 +64,14 @@ const ProfileAssessment = ({ onFinish, onBack }: { onFinish: (result: any) => vo
         if (data.jobType === 'business_owner' || data.jobType === 'state_official') score += 20;
         else if (data.jobType === 'freelancer') {
             score -= 10;
-            advice.push("Công việc tự do cần chuẩn bị kỹ bằng chứng thu nhập/hình ảnh làm việc.");
+            advice.push("Công việc tự do cần chuẩn bị kỹ bằng chứng thu nhập/hình ảnh làm việc để giải trình mục đích (GTE).");
         }
 
         if (data.socialInsurance === 'yes') score += 15;
         else if (['employee', 'state_official'].includes(data.jobType) && data.socialInsurance === 'no') {
              if (isDifficult) {
                 score -= 15;
-                advice.push("Thiếu BHXH/VssID là điểm yếu lớn với các nước phát triển. Cần giải trình kỹ.");
+                advice.push("Thiếu BHXH/VssID là điểm tử huyệt lớn. Cần thư giải trình từ công ty hoặc chứng minh thu nhập thụ động mạnh.");
              }
         }
 
@@ -76,8 +79,18 @@ const ProfileAssessment = ({ onFinish, onBack }: { onFinish: (result: any) => vo
         else if (data.travelHistory === 'none') {
             if (isDifficult) {
                 score -= 25;
-                advice.push("Hộ chiếu trắng rất khó xin visa nước lớn. Nên đi du lịch các nước Châu Á (Thái, Sing, Nhật...) trước để làm đẹp hồ sơ.");
+                advice.push("Hộ chiếu trắng rất dễ trượt. Chúng tôi có chiến lược làm đẹp hồ sơ (ví dụ nộp Nhật/Hàn trước).");
             }
+        }
+
+        // Refusal history check - Crucial for Five Eyes
+        if (data.visaRefusal !== 'none') {
+             if (data.visaRefusal === 'five_eyes') {
+                 score -= 30;
+                 advice.push("Trượt Visa khối Five Eyes (Mỹ/Úc/Anh/Canada/NZ) sẽ lưu vết chia sẻ dữ liệu. BẮT BUỘC phải đọc thư rớt/GCMS notes nội bộ trước khi nộp lại.");
+             } else {
+                 score -= 15;
+             }
         }
 
         if (data.ageGroup === '18-30' && data.maritalStatus === 'single') {
@@ -88,6 +101,7 @@ const ProfileAssessment = ({ onFinish, onBack }: { onFinish: (result: any) => vo
         if (score < 10) score = 10;
 
         return { score, advice };
+    
     };
 
     const handleSubmit = () => {
@@ -220,7 +234,7 @@ const ProfileAssessment = ({ onFinish, onBack }: { onFinish: (result: any) => vo
                     </div>
                 )}
 
-                {step === 6 && (
+                {step === 8 && (
                     <div className="space-y-4 animate-[fadeIn_0.3s]">
                         <div className="text-center mb-4">
                             <span className="material-symbols-outlined text-4xl text-primary mb-2">person_pin</span>
@@ -239,7 +253,7 @@ const ProfileAssessment = ({ onFinish, onBack }: { onFinish: (result: any) => vo
                 )}
 
                 {/* SUMMARY STEP */}
-                {step === 7 && (
+                {step === 8 && (
                     <div className="space-y-4 animate-[fadeIn_0.3s]">
                         <div className="bg-blue-50 p-4 rounded-xl mb-4 border border-blue-100 flex items-start gap-3">
                             <span className="material-symbols-outlined text-primary text-2xl">fact_check</span>
