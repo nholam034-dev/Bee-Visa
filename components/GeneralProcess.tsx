@@ -16,6 +16,7 @@ export const GeneralProcess: React.FC = () => {
       borderColor: "border-blue-200",
       shadowColor: "shadow-blue-200",
       time: "Ngay lập tức",
+      image: "/images/process_step_1.png",
       deliverables: ["Đánh giá tỷ lệ đậu thực tế", "Danh sách hồ sơ cá nhân hóa", "Báo giá trọn gói minh bạch"]
     },
     {
@@ -29,6 +30,7 @@ export const GeneralProcess: React.FC = () => {
       borderColor: "border-orange-200",
       shadowColor: "shadow-orange-200",
       time: "2 - 3 Ngày làm việc",
+      image: "/images/process_step_2.png",
       deliverables: ["Bộ hồ sơ hoàn chỉnh 100%", "Thư giải trình (Cover Letter)", "Booking vé máy bay & khách sạn"]
     },
     {
@@ -42,6 +44,7 @@ export const GeneralProcess: React.FC = () => {
       borderColor: "border-purple-200",
       shadowColor: "shadow-purple-200",
       time: "Theo lịch hẹn",
+      image: "/images/process_step_3.png",
       deliverables: ["Biên lai nộp hồ sơ", "Dữ liệu sinh trắc học", "Hướng dẫn phỏng vấn giả định"]
     },
     {
@@ -55,6 +58,7 @@ export const GeneralProcess: React.FC = () => {
       borderColor: "border-green-200",
       shadowColor: "shadow-green-200",
       time: "7 - 15 Ngày (Tùy nước)",
+      image: "/images/process_step_4.png",
       deliverables: ["Hộ chiếu đã dán Visa", "E-Visa (File mềm)", "Hỗ trợ đặt vé máy bay giá tốt"]
     }
   ];
@@ -68,7 +72,7 @@ export const GeneralProcess: React.FC = () => {
   return (
     <div className="w-full bg-white min-h-screen font-sans">
         {/* Hero Section */}
-        <div className="bg-[#002f34] relative overflow-hidden pt-20 pb-32 lg:pt-28 lg:pb-40">
+        <div className="bg-[#002f34] relative overflow-hidden pt-20 pb-20 lg:pt-28 lg:pb-28">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(253,185,19,0.1),transparent_50%)]"></div>
             <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]"></div>
             
@@ -83,16 +87,6 @@ export const GeneralProcess: React.FC = () => {
                 <p className="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-light animate-[fadeInUp_0.5s_0.4s]">
                     Chúng tôi đơn giản hóa quy trình xin visa phức tạp thành một trải nghiệm minh bạch, chuyên nghiệp và an tâm tuyệt đối.
                 </p>
-
-                {/* Infographic Image Floating */}
-                <div className="mt-12 md:mt-16 -mb-48 md:-mb-64 relative z-20 animate-[fadeInUp_0.5s_0.6s]">
-                     <div className="absolute inset-0 bg-secondary/30 blur-[120px] rounded-full scale-75"></div>
-                     <img 
-                        src="/images/visa_process_infographic.png" 
-                        alt="Beetours Infographic 4 Bước" 
-                        className="relative z-10 w-full max-w-5xl mx-auto rounded-2xl shadow-[0_40px_80px_-20px_rgba(0,0,0,0.5)] transform hover:-translate-y-2 transition-transform duration-500 border border-white/10" 
-                     />
-                </div>
             </div>
             
             {/* Curved Divider */}
@@ -104,14 +98,14 @@ export const GeneralProcess: React.FC = () => {
         </div>
 
         {/* Timeline Section */}
-        <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8 py-16 pt-56 md:pt-72">
+        <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8 py-16 pt-24 md:pt-32">
             <div className="relative">
                 {/* Central Line */}
                 <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-1 bg-gray-100 md:-translate-x-1/2 rounded-full">
                     <div className="absolute top-0 left-0 w-full h-1/3 bg-gradient-to-b from-primary/20 via-primary/50 to-transparent"></div>
                 </div>
 
-                <div className="flex flex-col gap-16 md:gap-24">
+                <div className="flex flex-col gap-16 md:gap-32">
                     {steps.map((step, index) => (
                         <div 
                             key={step.id} 
@@ -124,20 +118,20 @@ export const GeneralProcess: React.FC = () => {
                                 <span className="font-black text-lg md:text-2xl">{step.id}</span>
                             </div>
 
-                            {/* Date/Time Badge (Desktop Opposite) */}
-                            <div className={`hidden md:flex md:w-[45%] justify-center items-center ${index % 2 === 0 ? 'order-1 justify-end pr-12' : 'order-2 justify-start pl-12'}`}>
-                                <div className={`px-6 py-3 rounded-2xl bg-white border border-gray-100 text-slate-600 text-sm font-bold shadow-sm transition-all duration-300 ${activeStep === step.id ? 'translate-x-0 opacity-100' : 'opacity-70'}`}>
-                                    <div className="flex items-center gap-2">
+                            {/* Image Section (Desktop Opposite) */}
+                            <div className={`md:flex md:w-[45%] justify-center items-center w-full ml-14 md:ml-0 ${index % 2 === 0 ? 'order-1 justify-end pr-0 md:pr-12' : 'order-2 justify-start pl-0 md:pl-12'}`}>
+                                <div className={`relative w-full aspect-square md:aspect-video rounded-3xl overflow-hidden shadow-lg border-4 border-white transition-all duration-500 ${activeStep === step.id ? 'scale-[1.02] shadow-[0_20px_40px_-15px_rgba(0,0,0,0.2)]' : 'opacity-90 grayscale-[20%]'}`}>
+                                    <img src={step.image} alt={step.title} className="w-full h-full object-cover" />
+                                    <div className="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1.5 rounded-xl border border-white/50 text-slate-700 text-xs font-bold shadow-sm flex items-center gap-2">
                                         <div className={`w-2 h-2 rounded-full ${step.color.replace('text-', 'bg-')}`}></div>
-                                        <span className="uppercase tracking-wider text-[10px] text-slate-400">Thời gian dự kiến</span>
+                                        {step.time}
                                     </div>
-                                    <div className="text-lg text-slate-800 mt-1">{step.time}</div>
                                 </div>
                             </div>
 
                             {/* Card Content */}
                             <div className={`w-full ml-14 md:ml-0 md:w-[45%] ${index % 2 === 0 ? 'order-2 md:pl-12' : 'order-1 md:pr-12'}`}>
-                                <div className={`bg-white p-6 md:p-8 rounded-3xl border transition-all duration-500 relative overflow-hidden group-hover:-translate-y-2 ${activeStep === step.id ? `border-transparent shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] ring-1 ring-black/5` : 'border-gray-100 shadow-sm'}`}>
+                                <div className={`bg-white p-6 md:p-8 rounded-3xl border transition-all duration-500 relative overflow-hidden group-hover:-translate-y-2 lg:mt-0 -mt-6 ${activeStep === step.id ? `border-transparent shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] ring-1 ring-black/5` : 'border-gray-100 shadow-sm'}`}>
                                     
                                     {/* Hover Gradient Background */}
                                     <div className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-br ${step.bgColor.replace('bg-', 'from-')}/30 to-transparent pointer-events-none`}></div>
@@ -147,9 +141,6 @@ export const GeneralProcess: React.FC = () => {
                                         <div className="flex items-start justify-between mb-6">
                                             <div className={`w-14 h-14 rounded-2xl flex items-center justify-center shrink-0 transition-transform duration-500 group-hover:rotate-6 ${step.bgColor} ${step.color}`}>
                                                 <span className="material-symbols-outlined text-3xl">{step.icon}</span>
-                                            </div>
-                                            <div className="md:hidden px-3 py-1 rounded-full bg-gray-50 border border-gray-100 text-[10px] font-bold text-slate-500">
-                                                {step.time}
                                             </div>
                                         </div>
 
