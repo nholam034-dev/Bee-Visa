@@ -6,7 +6,7 @@ import { COUNTRIES_SUMMARY } from "../constants";
 export const LandingPage: React.FC = () => {
   const { siteConfig, addLead } = useData();
   const [timeLeft, setTimeLeft] = useState(15 * 60); // 15 minutes countdown
-  const [formData, setFormData] = useState({ name: "", phone: "", dest: "", note: "" });
+  const [formData, setFormData] = useState({ name: "", phone: "", dest: "", quyMo: "", note: "" });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   // Countdown Timer Logic
@@ -31,11 +31,11 @@ export const LandingPage: React.FC = () => {
         name: formData.name,
         phone: formData.phone,
         email: "",
-        note: `[ADS LANDING] Quan tâm: ${formData.dest || 'Chưa chọn'} - Note: ${formData.note}`,
+        note: `[ADS LANDING] Quan tâm: ${formData.dest || 'Chưa chọn'} | Quy mô: ${formData.quyMo || 'Cá nhân'} | Note: ${formData.note}`,
         source: "Ads Landing Page"
       });
       alert("🎉 Đăng ký thành công! Chuyên gia sẽ gọi lại cho bạn trong 5 phút nữa.");
-      setFormData({ name: "", phone: "", dest: "", note: "" });
+      setFormData({ name: "", phone: "", dest: "", quyMo: "", note: "" });
     } catch (error) {
       alert("Lỗi kết nối. Vui lòng thử lại.");
     } finally {
@@ -100,23 +100,23 @@ export const LandingPage: React.FC = () => {
             
             {/* Left Content */}
             <div className="flex-1 text-center lg:text-left text-white">
-              <div className="inline-block px-4 py-1 rounded-full bg-yellow-500/20 border border-yellow-500 text-yellow-400 text-xs font-bold uppercase tracking-wider mb-4">
-                 🔥 Ưu đãi giảm 500K phí dịch vụ hôm nay
+              <div className="inline-block px-4 py-1 rounded-full bg-yellow-500/20 border border-yellow-500 text-yellow-400 text-xs font-bold uppercase tracking-wider mb-4 md:mb-6">
+                 🔥 Báo Giá All-In 100% - Không Phí Ẩn
               </div>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight mb-6">
-                Chuyên Xử Lý <br/>
-                <span className="text-secondary">Hồ Sơ Visa Khó</span>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight mb-4 md:mb-6">
+                Giải Pháp An Tâm <br className="hidden md:block"/>
+                <span className="text-secondary text-3xl sm:text-5xl lg:text-6xl">Cho Hồ Sơ Visa Khó</span>
               </h1>
-              <p className="text-slate-300 text-lg mb-8 leading-relaxed">
-                <span className="material-symbols-outlined text-green-400 align-middle mr-1">check_circle</span> Tỷ lệ đậu lên đến 99% <br/>
-                <span className="material-symbols-outlined text-green-400 align-middle mr-1">check_circle</span> Xử lý hồ sơ trượt, hộ chiếu trắng <br/>
-                <span className="material-symbols-outlined text-green-400 align-middle mr-1">check_circle</span> Hoàn 100% phí dịch vụ nếu không đạt
+              <p className="text-slate-300 text-base md:text-lg mb-8 leading-relaxed">
+                <span className="material-symbols-outlined text-green-400 align-middle mr-1">check_circle</span> Trị dứt điểm hồ sơ yếu, hộ chiếu trắng <br/>
+                <span className="material-symbols-outlined text-green-400 align-middle mr-1">check_circle</span> Luyện phỏng vấn 1-1 với Chuyên gia <br/>
+                <span className="material-symbols-outlined text-green-400 align-middle mr-1">check_circle</span> Hoàn 100% phí dịch vụ nếu bị từ chối
               </p>
               
               <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
                  <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-lg backdrop-blur-md border border-white/10">
-                    <span className="text-2xl font-bold text-white">15+</span>
-                    <span className="text-[10px] text-slate-300 uppercase">Năm kinh<br/>nghiệm</span>
+                    <span className="text-2xl font-bold text-white">100%</span>
+                    <span className="text-[10px] text-slate-300 uppercase">Minh bạch<br/>giá cả</span>
                  </div>
                  <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-lg backdrop-blur-md border border-white/10">
                     <span className="text-2xl font-bold text-white">12k+</span>
@@ -164,6 +164,24 @@ export const LandingPage: React.FC = () => {
                       value={formData.phone}
                       onChange={e => setFormData({...formData, phone: e.target.value})}
                     />
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block text-xs font-bold text-slate-600 uppercase mb-1">Quy Mô Khách *</label>
+                  <div className="relative">
+                    <span className="absolute left-3 top-3 text-slate-400 material-symbols-outlined text-lg">group</span>
+                    <select 
+                      className="w-full h-11 pl-10 pr-4 border border-gray-300 rounded-lg focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none text-slate-900 bg-white"
+                      value={formData.quyMo}
+                      onChange={e => setFormData({...formData, quyMo: e.target.value})}
+                      required
+                    >
+                      <option value="">Chọn quy mô...</option>
+                      <option value="Cá nhân (1 người)">Cá nhân (1 người)</option>
+                      <option value="Khách Đoàn / Gia đình">Khách Đoàn / Gia đình (2+ người)</option>
+                      <option value="Doanh nghiệp (B2B)">Doanh nghiệp (Cần xuất HĐ)</option>
+                    </select>
                   </div>
                 </div>
 
@@ -248,29 +266,91 @@ export const LandingPage: React.FC = () => {
             <p className="text-slate-600 max-w-2xl mx-auto">Chúng tôi không chỉ nhận hồ sơ, chúng tôi cung cấp <span className="font-bold text-primary">giải pháp tối ưu</span> để biến giấc mơ của bạn thành hiện thực.</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-2xl border border-gray-100 shadow-lg hover:-translate-y-2 transition-transform duration-300 group">
-              <div className="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-white p-6 md:p-8 rounded-2xl border border-gray-100 shadow-lg hover:-translate-y-2 transition-transform duration-300 group flex flex-col items-center text-center">
+              <div className="w-16 h-16 bg-teal-50 rounded-2xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
                 <span className="material-symbols-outlined text-4xl">psychology</span>
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Phân Tích Chuyên Sâu</h3>
-              <p className="text-slate-500 text-sm leading-relaxed">Tìm ra "điểm chết" trong hồ sơ mà bạn không hề hay biết. Xây dựng kịch bản giải trình hợp lý nhất.</p>
+              <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-3 block">Phân Tích "Điểm Mù"</h3>
+              <p className="text-slate-500 text-sm leading-relaxed">Phát hiện nguyên nhân hồ sơ yếu mà bạn không nhận ra. Cam kết xây dựng kịch bản giải trình hợp lý nhất, tỷ lệ đậu cao.</p>
             </div>
 
-            <div className="bg-white p-8 rounded-2xl border border-gray-100 shadow-lg hover:-translate-y-2 transition-transform duration-300 group">
-              <div className="w-16 h-16 bg-yellow-50 rounded-2xl flex items-center justify-center text-yellow-600 mb-6 group-hover:bg-yellow-500 group-hover:text-white transition-colors">
-                <span className="material-symbols-outlined text-4xl">flash_on</span>
+            <div className="bg-white p-6 md:p-8 rounded-2xl border border-gray-100 shadow-lg hover:-translate-y-2 transition-transform duration-300 group flex flex-col items-center text-center">
+              <div className="w-16 h-16 bg-amber-50 rounded-2xl flex items-center justify-center text-secondary mb-6 group-hover:bg-secondary group-hover:text-white transition-colors">
+                <span className="material-symbols-outlined text-4xl">groups</span>
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Tốc Độ & Tiện Lợi</h3>
-              <p className="text-slate-500 text-sm leading-relaxed">Hỗ trợ điền form, dịch thuật, đặt lịch hẹn khẩn. Bạn chỉ cần cung cấp giấy tờ cơ bản, còn lại để chúng tôi lo.</p>
+              <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-3 block">Tối Ưu Khách Đoàn</h3>
+              <p className="text-slate-500 text-sm leading-relaxed">Xử lý hồ sơ nhóm gia đình tiện lợi. Bạn chỉ cần gửi danh sách cơ bản, mọi thủ tục điền form và nộp hộ đã có công ty lo liệu.</p>
             </div>
 
-            <div className="bg-white p-8 rounded-2xl border border-gray-100 shadow-lg hover:-translate-y-2 transition-transform duration-300 group">
+            <div className="bg-white p-6 md:p-8 rounded-2xl border border-gray-100 shadow-lg hover:-translate-y-2 transition-transform duration-300 group flex flex-col items-center text-center">
+              <div className="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                <span className="material-symbols-outlined text-4xl">domain</span>
+              </div>
+              <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-3 block">Đặc Quyền B2B</h3>
+              <p className="text-slate-500 text-sm leading-relaxed">Cung cấp báo giá All-in, hóa đơn VAT đỏ, làm hợp đồng thanh toán công nợ cuối tháng rành mạch. Không cần ứng tiền túi lắt nhắt.</p>
+            </div>
+
+            <div className="bg-white p-6 md:p-8 rounded-2xl border border-gray-100 shadow-lg hover:-translate-y-2 transition-transform duration-300 group flex flex-col items-center text-center">
               <div className="w-16 h-16 bg-red-50 rounded-2xl flex items-center justify-center text-red-600 mb-6 group-hover:bg-red-600 group-hover:text-white transition-colors">
                 <span className="material-symbols-outlined text-4xl">verified_user</span>
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Cam Kết Hoàn Phí</h3>
-              <p className="text-slate-500 text-sm leading-relaxed">Cam kết hoàn trả 100% phí dịch vụ nếu hồ sơ bị từ chối do lỗi xử lý của Beetours. Minh bạch tuyệt đối.</p>
+              <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-3 block">Bộ Cam Kết Bảo Vệ</h3>
+              <p className="text-slate-500 text-sm leading-relaxed">Giá chốt là giá cuối cùng, không tự động thêm phí. <b>Cam kết hoàn trả 100%</b> tiền dịch vụ nếu hồ sơ rớt do nhầm lẫn sơ suất của chuyên viên.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* 4.5 SOCIAL PROOF */}
+      <div className="bg-slate-50 py-16 border-t border-b border-gray-100">
+        <div className="max-w-[1100px] mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-3">Hơn 12,000 Khách Hàng Đã Tin Chọn</h2>
+            <p className="text-slate-500">Những câu chuyện thực tế từ các hồ sơ "tưởng chừng vô vọng".</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 relative">
+              <div className="flex gap-1 text-yellow-400 mb-3">
+                 <span className="material-symbols-outlined text-sm">star</span><span className="material-symbols-outlined text-sm">star</span><span className="material-symbols-outlined text-sm">star</span><span className="material-symbols-outlined text-sm">star</span><span className="material-symbols-outlined text-sm">star</span>
+              </div>
+              <p className="text-slate-600 text-sm leading-relaxed mb-4 italic">"Nhóm nhà em 8 người, có mẹ bỉm sữa lại thêm 2 bạn làm freelancer không sao kê lương rõ ràng. Quanh đi quẩn lại may nhờ chuyên viên phân tích đường tiền rõ ràng nên xin visa Úc pass 100% không rớt ai."</p>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">H</div>
+                <div>
+                  <h4 className="font-bold text-slate-900 text-sm">Chị Hoàng Yến</h4>
+                  <p className="text-xs text-slate-400">Trưởng nhóm 8 Pax (Visa Úc)</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 relative">
+              <div className="flex gap-1 text-yellow-400 mb-3">
+                 <span className="material-symbols-outlined text-sm">star</span><span className="material-symbols-outlined text-sm">star</span><span className="material-symbols-outlined text-sm">star</span><span className="material-symbols-outlined text-sm">star</span><span className="material-symbols-outlined text-sm">star</span>
+              </div>
+              <p className="text-slate-600 text-sm leading-relaxed mb-4 italic">"Sếp tôi đi công tác châu Âu gấp nhưng lại chỉ thích làm việc qua email, không muốn gặp mặt. Beetours chốt Hợp đồng chuẩn B2B, xuất hóa đơn VAT đầy đủ, thủ tục ký tá online rẹt rẹt cực kỳ nhàn cho Hành chính."</p>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center text-red-600 font-bold">T</div>
+                <div>
+                  <h4 className="font-bold text-slate-900 text-sm">Trần Thanh Trúc</h4>
+                  <p className="text-xs text-slate-400">Thư ký Giám Đốc (Visa Schengen)</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 relative">
+              <div className="flex gap-1 text-yellow-400 mb-3">
+                 <span className="material-symbols-outlined text-sm">star</span><span className="material-symbols-outlined text-sm">star</span><span className="material-symbols-outlined text-sm">star</span><span className="material-symbols-outlined text-sm">star</span><span className="material-symbols-outlined text-sm">star</span>
+              </div>
+              <p className="text-slate-600 text-sm leading-relaxed mb-4 italic">"Từng trượt visa Mỹ 1 lần vì trả lời lúng túng. Sang đây được luyện phỏng vấn 1-1, bắt trúng câu hỏi của LSQ, lúc vô tự tin hẳn, chưa tới 3 phút là LSQ báo đậu rồi."</p>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center text-primary font-bold">K</div>
+                <div>
+                  <h4 className="font-bold text-slate-900 text-sm">Anh Khang Nguyễn</h4>
+                  <p className="text-xs text-slate-400">Visa B1/B2 Mỹ</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
