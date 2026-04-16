@@ -1,0 +1,10 @@
+# Beetours Vietnam — beevisa.vn
+# https://beevisa.vn/robots.txt
+
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /landing
+
+# Sitemap
+Sitemap: https://beevisa.vn/sitemap.xml

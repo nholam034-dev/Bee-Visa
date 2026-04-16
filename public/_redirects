@@ -1,0 +1,4 @@
+# Netlify Redirects — SPA Fallback
+# Mọi request đều trả về index.html, React Router xử lý routing phía client
+
+/*    /index.html   200

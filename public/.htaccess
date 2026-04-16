@@ -1,0 +1,16 @@
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  
+  # Ưu tiên chạy file PHP trước
+  DirectoryIndex index.php index.html
+
+  # Nếu truy cập vào file hoặc thư mục thật sự tồn tại (ảnh, css, js) thì phục vụ trực tiếp
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Tất cả các đường dẫn ảo khác (ví dụ /contact, /visa-my) đều chuyển về index.php
+  RewriteRule ^ index.php [L]
+</IfModule>
