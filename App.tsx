@@ -64,7 +64,7 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
   return (
     <div className="min-h-screen flex flex-col font-display bg-white">
-      <Header onNavigate={navigateTo} activePage="home" onOpenModal={() => openModal('chat')} />
+      <Header onNavigate={navigateTo} onOpenModal={() => openModal('chat')} />
       
       <main className="flex-grow">
         {/* Inject navigateTo and openModal into children via context or clone */}
@@ -148,16 +148,16 @@ const ServiceDetailPage: React.FC<{ explicitDetailId?: string; onNavigate?: Func
 };
 
 
-const BlogListPage: React.FC<{ onNavigate?: Function }> = ({ onNavigate }) => (
+const BlogListPage: React.FC = () => (
   <>
     <SEOHead customTitle="Kinh Nghiệm & Phân Tích Thực Chiến | Beetours Vietnam" />
-    <BlogList onNavigate={onNavigate as any} />
+    <BlogList />
   </>
 );
 
-const BlogDetailPage: React.FC<{ onNavigate?: Function }> = ({ onNavigate }) => (
+const BlogDetailPage: React.FC = () => (
   <>
-    <BlogPostDetail onNavigate={onNavigate as any} />
+    <BlogPostDetail />
   </>
 );
 

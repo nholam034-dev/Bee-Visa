@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { useData } from "../contexts/DataContext";
 import { BlogPost } from "../types";
+import { useNavigate } from "react-router-dom";
 
-export const BlogList: React.FC<{ onNavigate: Function }> = ({ onNavigate }) => {
+export const BlogList: React.FC = () => {
+  const navigate = useNavigate();
   const { blogs, isLoading } = useData();
   const [activeTab, setActiveTab] = useState<string>("Tất cả");
 
@@ -65,7 +67,7 @@ export const BlogList: React.FC<{ onNavigate: Function }> = ({ onNavigate }) => 
               <div 
                 key={blog.id} 
                 className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 cursor-pointer flex flex-col h-full"
-                onClick={() => onNavigate(`/kinh-nghiem-visa/${blog.slug}`)}
+                onClick={() => navigate(`/kinh-nghiem-visa/${blog.slug}`)}
                 style={{ animationDelay: `${idx * 0.1}s` }}
               >
                 {/* Image */}

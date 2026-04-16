@@ -1,10 +1,11 @@
 import React from "react";
-import { useParams, Navigate } from "react-router-dom";
+import { useParams, Navigate, useNavigate } from "react-router-dom";
 import { useData } from "../contexts/DataContext";
 import { SEOHead } from "./SEOHead";
 
-export const BlogPostDetail: React.FC<{ onNavigate: Function }> = ({ onNavigate }) => {
+export const BlogPostDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
+  const navigate = useNavigate();
   const { blogs, isLoading } = useData();
 
   if (isLoading) {
@@ -70,7 +71,7 @@ export const BlogPostDetail: React.FC<{ onNavigate: Function }> = ({ onNavigate 
                <p className="text-slate-600 text-sm">Chuyên gia Beetours sẽ thẩm định rủi ro miễn phí.</p>
             </div>
             <button 
-              onClick={() => onNavigate('/lien-he')}
+              onClick={() => navigate('/lien-he')}
               className="px-8 py-3 bg-slate-900 text-white rounded-full font-bold hover:bg-primary transition-colors whitespace-nowrap"
             >
               Liên Hệ Chuyên Gia

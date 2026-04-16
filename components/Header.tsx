@@ -1,18 +1,41 @@
 
 import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
 import { COUNTRIES_SUMMARY, SERVICE_DETAILS } from "../constants";
 import { useData } from "../contexts/DataContext";
 
 interface HeaderProps {
     onNavigate: (pageId: string) => void;
-    activePage: string;
     onOpenModal: () => void;
 }
 
-export const Header: React.FC<HeaderProps> = ({ onNavigate, activePage, onOpenModal }) => {
+export const Header: React.FC<HeaderProps> = ({ onNavigate, onOpenModal }) => {
   const { siteConfig } = useData();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const location = useLocation();
+  const path = location.pathname;
+  
+  let activePage = 'home';
+  if (path.includes('quy-trinh')) activePage = 'process';
+  else if (path.includes('lien-he')) activePage = 'contact';
+  else if (path.includes('kinh-nghiem-visa')) activePage = 'kinh-nghiem-visa';
+  else {
+      // Logic from MainLayout for countries
+      // Extract from path like /visa-my
+      const match = path.match(/^\/visa-([^\/]+)/);
+      if (match) {
+          const slug = match[1];
+          // Find country by slug
+          const parentMap: Record<string, string> = {
+            "my": "usa", "anh-quoc": "uk", "chau-au": "schengen", "uc": "au",
+            "canada": "ca", "new-zealand": "nz", "nhat-ban": "jp", "han-quoc": "kr",
+            "trung-quoc": "cn", "hong-kong": "hk", "dai-loan": "tw", "dubai": "uae",
+            "nga": "ru", "nam-phi": "za", "an-do": "in", "ai-cap": "eg",
+          };
+          activePage = parentMap[slug] || 'home';
+      }
+  }
 
   // Determine display name for dropdown
   let activeCountryName = "Trang Chủ";
@@ -114,6 +137,13 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, activePage, onOpenMo
                 className={`text-sm font-bold uppercase tracking-wide transition-colors ${activePage === 'contact' ? 'text-primary' : 'text-slate-700 hover:text-primary'}`}
              >
                 Liên Hệ
+             </button>
+             
+             <button 
+                onClick={() => onNavigate('kinh-nghiem-visa')}
+                className={`text-sm font-bold uppercase tracking-wide transition-colors ${activePage === 'kinh-nghiem-visa' ? 'text-primary' : 'text-slate-700 hover:text-primary'}`}
+             >
+                Kinh Nghiệm
              </button>
           </nav>
 
