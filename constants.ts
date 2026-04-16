@@ -54,7 +54,7 @@ export const PAGES: Record<string, PageData> = {
         title: "Chuyên Gia Visa",
         highlight: "Toàn Cầu",
         description: "Giải pháp visa toàn diện cho 11 thị trường khó tính nhất. Chúng tôi biến giấc mơ du lịch, du học và định cư của bạn thành hiện thực với tỷ lệ đậu lên tới 99%.",
-        backgroundImage: "https://picsum.photos/seed/worldmap/1920/1080",
+        backgroundImage: "/images/destinations/my.png",
         buttonPrimary: "Chọn Điểm Đến",
         buttonSecondary: "",
         buttonSecondaryIcon: ""
@@ -68,9 +68,9 @@ export const PAGES: Record<string, PageData> = {
     navItems: [{ label: "Visa Anh", href: "#services" }, { label: "Quy Trình", href: "#process" }, { label: "Bảng Phí", href: "#" }],
     stats: [{ icon: "verified", label: "Tỷ Lệ Đậu", value: "98%" }, ...COMMON_STATS, { icon: "timer", label: "Xét Duyệt", value: "3 Tuần" }],
     services: [
-      { title: "Visa Du Lịch (Standard)", description: "Du lịch tự túc, khám phá London, Scotland.", image: "https://picsum.photos/seed/londonbus/800/600", icon: "attractions", detailId: "uk-tourist" },
-      { title: "Visa Thăm Thân", description: "Thăm con du học, dự lễ tốt nghiệp, người thân.", image: "https://picsum.photos/seed/englandhome/800/600", icon: "family_restroom", detailId: "uk-family" },
-      { title: "Visa Công Tác", description: "Hội họp, thương thảo hợp đồng ngắn hạn.", image: "https://picsum.photos/seed/canarywharf/800/600", icon: "business_center", detailId: "uk-business" },
+      { title: "Visa Du Lịch (Standard)", description: "Du lịch tự túc, khám phá London, Scotland.", image: "/images/services/eg-visit.png", icon: "attractions", detailId: "uk-tourist" },
+      { title: "Visa Thăm Thân", description: "Thăm con du học, dự lễ tốt nghiệp, người thân.", image: "/images/services/usa-b1b2.png", icon: "family_restroom", detailId: "uk-family" },
+      { title: "Visa Công Tác", description: "Hội họp, thương thảo hợp đồng ngắn hạn.", image: "/images/services/usa-f1.png", icon: "business_center", detailId: "uk-business" },
     ],
     process: [
       { number: 1, title: "Đánh Giá", description: "Phân tích hồ sơ và nguồn gốc tài chính.", icon: "rate_review" },
@@ -83,7 +83,7 @@ export const PAGES: Record<string, PageData> = {
       title: "Visa Anh Quốc",
       highlight: "Standard Visitor",
       description: "Chinh phục Visa Anh Quốc 6 tháng, 2 năm, 5 năm, 10 năm. Chuyên gia xử lý hồ sơ khó, hộ chiếu trắng, chứng minh nguồn tài chính phức tạp (Provenance of Funds).",
-      backgroundImage: "https://picsum.photos/seed/bigben/1920/1080",
+      backgroundImage: "/images/destinations/anh-quoc.png",
       buttonPrimary: "Tư Vấn Báo Giá",
       buttonSecondary: "Hồ Sơ Cần Có",
       buttonSecondaryIcon: "inventory"
@@ -97,9 +97,9 @@ export const PAGES: Record<string, PageData> = {
     navItems: [{ label: "Visa Mỹ", href: "#services" }, { label: "Quy Trình", href: "#process" }, { label: "Bảng Phí", href: "#" }],
     stats: [{ icon: "verified", label: "Tỷ Lệ Đậu", value: "96%" }, ...COMMON_STATS, { icon: "flag", label: "Visa Đã Cấp", value: "12.000+" }],
     services: [
-      { title: "Visa B1/B2", description: "Du lịch, công tác, thăm thân (1 năm).", image: "https://picsum.photos/seed/statueofliberty/800/600", icon: "flight_takeoff", detailId: "usa-b1b2" },
-      { title: "Visa Du Học (F1)", description: "Tư vấn chọn trường, luyện phỏng vấn 1:1.", image: "https://picsum.photos/seed/harvard/800/600", icon: "school", detailId: "usa-f1" },
-      { title: "Gia Hạn Visa", description: "Làm qua đường bưu điện (Không phỏng vấn).", image: "https://picsum.photos/seed/usapassport/800/600", icon: "autorenew", detailId: "usa-renewal" },
+      { title: "Visa B1/B2", description: "Du lịch, công tác, thăm thân (1 năm).", image: "/images/services/usa-renewal.png", icon: "flight_takeoff", detailId: "usa-b1b2" },
+      { title: "Visa Du Học (F1)", description: "Tư vấn chọn trường, luyện phỏng vấn 1:1.", image: "/images/services/schengen-france.png", icon: "school", detailId: "usa-f1" },
+      { title: "Gia Hạn Visa", description: "Làm qua đường bưu điện (Không phỏng vấn).", image: "/images/services/schengen-business.png", icon: "autorenew", detailId: "usa-renewal" },
     ],
     process: [
       { number: 1, title: "Khai DS-160", description: "Khai form online chính xác tuyệt đối.", icon: "edit_document" },
@@ -112,7 +112,7 @@ export const PAGES: Record<string, PageData> = {
       title: "Visa Mỹ Trọn Gói",
       highlight: "Bao Đậu Phỏng Vấn",
       description: "Chuyên xử lý hồ sơ khó, hộ chiếu trắng, từng rớt visa. Dịch vụ luyện phỏng vấn chuyên sâu giúp bạn tự tin thuyết phục viên chức Lãnh sự ngay lần đầu.",
-      backgroundImage: "https://picsum.photos/seed/nycskyline/1920/1080",
+      backgroundImage: "/images/destinations/my.png",
       buttonPrimary: "Đánh Giá Hồ Sơ",
       buttonSecondary: "Lịch Phỏng Vấn",
       buttonSecondaryIcon: "calendar_month",
@@ -126,9 +126,9 @@ export const PAGES: Record<string, PageData> = {
     navItems: [{ label: "Visa Châu Âu", href: "#services" }, { label: "Quy Trình", href: "#process" }, { label: "Bảng Phí", href: "#" }],
     stats: [{ icon: "verified", label: "Tỷ Lệ Đậu", value: "98.5%" }, ...COMMON_STATS, { icon: "public", label: "Đi Lại", value: "29 Nước" }],
     services: [
-      { title: "Visa Pháp (Du Lịch)", description: "Cửa ngõ phổ biến nhất. Xét duyệt nhanh.", image: "https://picsum.photos/seed/paris/800/600", icon: "wine_bar", detailId: "schengen-france" },
-      { title: "Visa Công Tác", description: "Dự hội chợ, gặp gỡ đối tác tại Châu Âu.", image: "https://picsum.photos/seed/berlin/800/600", icon: "business_center", detailId: "schengen-business" },
-      { title: "Visa Thăm Thân", description: "Thăm con du học, người thân định cư.", image: "https://picsum.photos/seed/swissalps/800/600", icon: "family_restroom", detailId: "schengen-family" },
+      { title: "Visa Pháp (Du Lịch)", description: "Cửa ngõ phổ biến nhất. Xét duyệt nhanh.", image: "/images/services/schengen-family.png", icon: "wine_bar", detailId: "schengen-france" },
+      { title: "Visa Công Tác", description: "Dự hội chợ, gặp gỡ đối tác tại Châu Âu.", image: "/images/services/au-600.png", icon: "business_center", detailId: "schengen-business" },
+      { title: "Visa Thăm Thân", description: "Thăm con du học, người thân định cư.", image: "/images/services/ca-visitor.png", icon: "family_restroom", detailId: "schengen-family" },
     ],
     process: [
       { number: 1, title: "Chọn Nước", description: "Xác định 'Điểm đến chính' (Main Destination).", icon: "map" },
@@ -141,7 +141,7 @@ export const PAGES: Record<string, PageData> = {
       title: "Visa Châu Âu Schengen",
       highlight: "Pháp - Đức - Ý",
       description: "Khám phá Châu Âu không giới hạn. Beetours chuyên xử lý Visa Pháp (cửa ngõ dễ nhất), hỗ trợ chứng minh tài chính, bảo hiểm du lịch quốc tế và xử lý hồ sơ từng bị từ chối.",
-      backgroundImage: "https://picsum.photos/seed/eiffeltower/1920/1080",
+      backgroundImage: "/images/destinations/chau-au.png",
       buttonPrimary: "Tư Vấn Free",
       buttonSecondary: "Danh Sách Nước",
       buttonSecondaryIcon: "public",
@@ -155,9 +155,9 @@ export const PAGES: Record<string, PageData> = {
     navItems: [{ label: "Visa Úc", href: "#services" }, { label: "Quy Trình", href: "#process" }, { label: "Phí", href: "#" }],
     stats: [{ icon: "verified", label: "Tỷ Lệ Đậu", value: "95%" }, ...COMMON_STATS, { icon: "beach_access", label: "Visa Du Lịch", value: "5.000+" }],
     services: [
-        { title: "Visa 600 (Visitor)", description: "Du lịch, thăm thân, công tác ngắn hạn.", image: "https://picsum.photos/seed/sydney/800/600", icon: "hiking", detailId: "au-600" },
-        { title: "Visa Công Tác (Business)", description: "Khảo sát thị trường, dự hội nghị.", image: "https://picsum.photos/seed/melbourne/800/600", icon: "business_center", detailId: "au-600" },
-        { title: "Visa Thăm Thân (Family)", description: "Thăm con cái, người thân bảo lãnh.", image: "https://picsum.photos/seed/outback/800/600", icon: "family_restroom", detailId: "au-600" },
+        { title: "Visa 600 (Visitor)", description: "Du lịch, thăm thân, công tác ngắn hạn.", image: "/images/services/ca-super.png", icon: "hiking", detailId: "au-600" },
+        { title: "Visa Công Tác (Business)", description: "Khảo sát thị trường, dự hội nghị.", image: "/images/services/au-600.png", icon: "business_center", detailId: "au-600" },
+        { title: "Visa Thăm Thân (Family)", description: "Thăm con cái, người thân bảo lãnh.", image: "/images/services/au-600.png", icon: "family_restroom", detailId: "au-600" },
     ],
     process: [
         { number: 1, title: "Nộp Online", description: "Tạo tài khoản ImmiAccount và nộp hồ sơ.", icon: "computer" },
@@ -170,7 +170,7 @@ export const PAGES: Record<string, PageData> = {
         title: "Visa Úc Online 100%",
         highlight: "Không Giữ Hộ Chiếu",
         description: "Dịch vụ làm visa Úc trọn gói: Du lịch, Thăm thân, Công tác. Nộp hồ sơ online 100% qua ImmiAccount, không cần nộp hộ chiếu gốc. Tư vấn tối ưu hồ sơ tài chính để đạt visa 3 năm.",
-        backgroundImage: "https://picsum.photos/seed/sydneyopera/1920/1080",
+        backgroundImage: "/images/destinations/uc.png",
         buttonPrimary: "Tư Vấn Visa Úc",
         buttonSecondary: "Chi Phí",
         buttonSecondaryIcon: "attach_money"
@@ -184,9 +184,9 @@ export const PAGES: Record<string, PageData> = {
     navItems: [{ label: "Visa Canada", href: "#services" }, { label: "Quy Trình", href: "#process" }],
     stats: [{ icon: "verified", label: "Tỷ Lệ Đậu", value: "92%" }, ...COMMON_STATS, { icon: "calendar_month", label: "Thời Hạn", value: "Đến 10 Năm" }],
     services: [
-        { title: "Visitor Visa (V1)", description: "Du lịch, thăm thân 10 năm.", image: "https://picsum.photos/seed/toronto/800/600", icon: "flight", detailId: "ca-visitor" },
-        { title: "Super Visa (PG-1)", description: "Ông bà/Cha mẹ ở liên tục 5-7 năm.", image: "https://picsum.photos/seed/vancouver/800/600", icon: "elderly", detailId: "ca-super" },
-        { title: "Study Permit", description: "Giấy phép du học (SDS & Non-SDS).", image: "https://picsum.photos/seed/ubc/800/600", icon: "school", detailId: "ca-student" },
+        { title: "Visitor Visa (V1)", description: "Du lịch, thăm thân 10 năm.", image: "/images/services/ca-student.png", icon: "flight", detailId: "ca-visitor" },
+        { title: "Super Visa (PG-1)", description: "Ông bà/Cha mẹ ở liên tục 5-7 năm.", image: "/images/services/nz-visitor.png", icon: "elderly", detailId: "ca-super" },
+        { title: "Study Permit", description: "Giấy phép du học (SDS & Non-SDS).", image: "/images/services/nz-family.png", icon: "school", detailId: "ca-student" },
     ],
     process: [
         { number: 1, title: "Chuẩn Bị", description: "Dịch thuật & Điền form IMM.", icon: "folder_open" },
@@ -199,7 +199,7 @@ export const PAGES: Record<string, PageData> = {
         title: "Visa Canada 10 Năm",
         highlight: "Quyền Lực",
         description: "Chinh phục Visa Canada với thời hạn cấp theo hộ chiếu (tối đa 10 năm). Ưu tiên chương trình CAN+ (miễn chứng minh tài chính) cho khách đã có visa Mỹ. Tư vấn Super Visa ở lại 5 năm.",
-        backgroundImage: "https://picsum.photos/seed/niagarafalls/1920/1080",
+        backgroundImage: "/images/destinations/canada.png",
         buttonPrimary: "Đánh Giá Hồ Sơ",
         buttonSecondary: "Quy Trình CAN+",
         buttonSecondaryIcon: "verified"
@@ -213,9 +213,9 @@ export const PAGES: Record<string, PageData> = {
     navItems: [{ label: "Visa NZ", href: "#services" }, { label: "Quy Trình", href: "#process" }, { label: "Bảng Phí", href: "#" }],
     stats: [{ icon: "verified", label: "Tỷ Lệ Đậu", value: "94%" }, ...COMMON_STATS, { icon: "payments", label: "Phí IVL", value: "100 NZD" }],
     services: [
-        { title: "Visitor Visa", description: "Du lịch tự túc, nộp online qua RealMe.", image: "https://picsum.photos/seed/hobbiton/800/600", icon: "landscape", detailId: "nz-visitor" },
-        { title: "Visa Thăm Thân", description: "Thăm con du học hoặc người thân.", image: "https://picsum.photos/seed/auckland/800/600", icon: "family_restroom", detailId: "nz-family" },
-        { title: "Visa Nhóm (Group)", description: "Gia đình nộp chung hồ sơ, xét duyệt cùng lúc.", image: "https://picsum.photos/seed/milfordsound/800/600", icon: "groups", detailId: "nz-visitor" },
+        { title: "Visitor Visa", description: "Du lịch tự túc, nộp online qua RealMe.", image: "/images/services/jp-tourist.png", icon: "landscape", detailId: "nz-visitor" },
+        { title: "Visa Thăm Thân", description: "Thăm con du học hoặc người thân.", image: "/images/services/nz-visitor.png", icon: "family_restroom", detailId: "nz-family" },
+        { title: "Visa Nhóm (Group)", description: "Gia đình nộp chung hồ sơ, xét duyệt cùng lúc.", image: "/images/services/nz-visitor.png", icon: "groups", detailId: "nz-visitor" },
     ],
     process: [
         { number: 1, title: "Chuẩn Bị", description: "Dịch thuật công chứng toàn bộ hồ sơ.", icon: "translate" },
@@ -228,7 +228,7 @@ export const PAGES: Record<string, PageData> = {
         title: "Visa New Zealand",
         highlight: "Online & Tiện Lợi",
         description: "Dịch vụ visa New Zealand chuyên nghiệp. Hỗ trợ nộp hồ sơ Online qua hệ thống RealMe, xử lý visa nhóm gia đình và tư vấn đóng phí bảo tồn IVL đúng quy định.",
-        backgroundImage: "https://picsum.photos/seed/newzealand_landscape/1920/1080",
+        backgroundImage: "/images/destinations/new-zealand.png",
         buttonPrimary: "Báo Giá Trọn Gói",
         buttonSecondary: "Quy Trình RealMe",
         buttonSecondaryIcon: "laptop_mac"
@@ -242,9 +242,9 @@ export const PAGES: Record<string, PageData> = {
     navItems: [{ label: "Visa Nhật", href: "#services" }, { label: "Quy Trình", href: "#process" }, { label: "Bảng Phí", href: "#" }],
     stats: [{ icon: "verified", label: "Tỷ Lệ Đậu", value: "99%" }, ...COMMON_STATS, { icon: "schedule", label: "Xét Duyệt", value: "7-10 Ngày" }],
     services: [
-        { title: "Visa Du Lịch Tự Túc", description: "Single Entry (3 tháng), lưu trú 15 ngày.", image: "https://picsum.photos/seed/tokyo/800/600", icon: "photo_camera", detailId: "jp-tourist" },
-        { title: "Visa Công Tác", description: "Thương mại, hội nghị. Cần thư mời gốc.", image: "https://picsum.photos/seed/osaka/800/600", icon: "business_center", detailId: "jp-business" },
-        { title: "Visa Thăm Thân", description: "Thăm người thân, bạn bè đang sống tại Nhật.", image: "https://picsum.photos/seed/kyoto/800/600", icon: "family_restroom", detailId: "jp-tourist" },
+        { title: "Visa Du Lịch Tự Túc", description: "Single Entry (3 tháng), lưu trú 15 ngày.", image: "/images/services/jp-business.png", icon: "photo_camera", detailId: "jp-tourist" },
+        { title: "Visa Công Tác", description: "Thương mại, hội nghị. Cần thư mời gốc.", image: "/images/services/jp-tourist.png", icon: "business_center", detailId: "jp-business" },
+        { title: "Visa Thăm Thân", description: "Thăm người thân, bạn bè đang sống tại Nhật.", image: "/images/services/jp-tourist.png", icon: "family_restroom", detailId: "jp-tourist" },
     ],
     process: [
         { number: 1, title: "Chuẩn Bị", description: "Hồ sơ bản gốc, sắp xếp theo thứ tự.", icon: "folder_special" },
@@ -257,7 +257,7 @@ export const PAGES: Record<string, PageData> = {
         title: "Visa Nhật Bản",
         highlight: "Bao Đậu 99%",
         description: "Dịch vụ làm visa Nhật Bản trọn gói: Du lịch tự túc, Thăm thân, Công tác. Hỗ trợ xử lý hồ sơ không cần thư mời (gói cao cấp), tư vấn lịch trình chuẩn logic để tăng tỷ lệ đậu. Cam kết hoàn phí nếu trượt (theo điều kiện).",
-        backgroundImage: "https://picsum.photos/seed/fujimountain/1920/1080",
+        backgroundImage: "/images/destinations/nhat-ban.png",
         buttonPrimary: "Báo Giá Visa",
         buttonSecondary: "Thủ Tục",
         buttonSecondaryIcon: "description"
@@ -271,9 +271,9 @@ export const PAGES: Record<string, PageData> = {
     navItems: [{ label: "Visa Hàn", href: "#services" }],
     stats: [{ icon: "verified", label: "Tỷ Lệ Đậu", value: "96%" }, ...COMMON_STATS],
     services: [
-        { title: "Visa C-3-9", description: "Du lịch tự túc.", image: "https://picsum.photos/seed/seoul/800/600", icon: "attractions", detailId: "kr-tourist" },
-        { title: "Visa 5 Năm", description: "Đại đô thị (Hà Nội, TP.HCM, Đà Nẵng).", image: "https://picsum.photos/seed/busan/800/600", icon: "looks_5", detailId: "kr-5year" },
-        { title: "Visa Công Tác", description: "Thương mại, hội nghị.", image: "https://picsum.photos/seed/incheon/800/600", icon: "work", detailId: "kr-business" },
+        { title: "Visa C-3-9", description: "Du lịch tự túc.", image: "/images/services/kr-tourist.png", icon: "attractions", detailId: "kr-tourist" },
+        { title: "Visa 5 Năm", description: "Đại đô thị (Hà Nội, TP.HCM, Đà Nẵng).", image: "/images/services/kr-5year.png", icon: "looks_5", detailId: "kr-5year" },
+        { title: "Visa Công Tác", description: "Thương mại, hội nghị.", image: "/images/services/kr-business.png", icon: "work", detailId: "kr-business" },
     ],
     process: [
         { number: 1, title: "Đặt Lịch", description: "Đăng ký lịch hẹn KVAC.", icon: "calendar_today" },
@@ -286,7 +286,7 @@ export const PAGES: Record<string, PageData> = {
         title: "Vi Vu",
         highlight: "Hàn Quốc",
         description: "Chuyên visa 5 năm, 10 năm cho công dân đại đô thị. Hỗ trợ chứng minh tài chính và lịch trình.",
-        backgroundImage: "https://picsum.photos/seed/gyeongbokgung/1920/1080",
+        backgroundImage: "/images/destinations/han-quoc.png",
         buttonPrimary: "Check Tỷ Lệ Đậu",
         buttonSecondary: "Visa 5 Năm",
         buttonSecondaryIcon: "star"
@@ -300,9 +300,9 @@ export const PAGES: Record<string, PageData> = {
       navItems: [{ label: "Visa Trung", href: "#services" }, { label: "Quy Trình", href: "#process" }, { label: "Thủ Tục", href: "#" }],
       stats: [{ icon: "verified", label: "Tỷ Lệ Đậu", value: "99.9%" }, ...COMMON_STATS, { icon: "speed", label: "Visa Khẩn", value: "2-3 Ngày" }],
       services: [
-          { title: "Visa Du Lịch (L)", description: "3 tháng 1 lần, lưu trú 15-30 ngày. Thủ tục đơn giản.", image: "https://picsum.photos/seed/greatwall/800/600", icon: "camera_alt", detailId: "cn-tourist" },
-          { title: "Visa Thương Mại (M)", description: "Dành cho đối tác kinh doanh, hội chợ Canton Fair.", image: "https://picsum.photos/seed/shanghai/800/600", icon: "store", detailId: "cn-business" },
-          { title: "Visa 6 Tháng/1 Năm", description: "Nhập cảnh nhiều lần (Multiple) cho khách đi thường xuyên.", image: "https://picsum.photos/seed/chengdu/800/600", icon: "repeat", detailId: "cn-business" },
+          { title: "Visa Du Lịch (L)", description: "3 tháng 1 lần, lưu trú 15-30 ngày. Thủ tục đơn giản.", image: "/images/services/cn-tourist.png", icon: "camera_alt", detailId: "cn-tourist" },
+          { title: "Visa Thương Mại (M)", description: "Dành cho đối tác kinh doanh, hội chợ Canton Fair.", image: "/images/services/cn-business.png", icon: "store", detailId: "cn-business" },
+          { title: "Visa 6 Tháng/1 Năm", description: "Nhập cảnh nhiều lần (Multiple) cho khách đi thường xuyên.", image: "/images/services/cn-business.png", icon: "repeat", detailId: "cn-business" },
       ],
       process: [
         { number: 1, title: "Khai COVA", description: "Điền tờ khai tiếng Trung/Anh cực chuẩn xác.", icon: "description" },
@@ -315,7 +315,7 @@ export const PAGES: Record<string, PageData> = {
           title: "Visa Trung Quốc",
           highlight: "Bao Đậu 99%",
           description: "Dịch vụ làm visa Trung Quốc trọn gói: Điền tờ khai COVA, đặt lịch hẹn lăn tay VIP, xử lý visa đoàn và thương mại khẩn 2 ngày. Không cần thư mời gốc (tùy diện).",
-          backgroundImage: "https://picsum.photos/seed/forbidden/1920/1080",
+          backgroundImage: "/images/destinations/trung-quoc.png",
           buttonPrimary: "Báo Giá Trọn Gói",
           buttonSecondary: "Hồ Sơ Cần Có",
           buttonSecondaryIcon: "folder"
@@ -329,9 +329,9 @@ export const PAGES: Record<string, PageData> = {
       navItems: [{ label: "E-Visa HK", href: "#services" }, { label: "Quy Trình", href: "#process" }, { label: "Bảng Phí", href: "#" }],
       stats: [{ icon: "verified", label: "Tỷ Lệ Đậu", value: "96%" }, ...COMMON_STATS, { icon: "schedule", label: "Thời Gian", value: "3-4 Tuần" }],
       services: [
-          { title: "E-Visa Du Lịch", description: "Visa điện tử nhập cảnh 1 lần hoặc 2 lần.", image: "https://picsum.photos/seed/hongkongday/800/600", icon: "flight_takeoff", detailId: "hk-tourist" },
-          { title: "E-Visa Công Tác", description: "Dành cho thương nhân dự hội chợ, họp đối tác.", image: "https://picsum.photos/seed/hkconvention/800/600", icon: "business_center", detailId: "hk-business" },
-          { title: "Visa Thăm Thân", description: "Thăm con cái, vợ chồng đang làm việc tại HK.", image: "https://picsum.photos/seed/hkfamily/800/600", icon: "family_restroom", detailId: "hk-family" },
+          { title: "E-Visa Du Lịch", description: "Visa điện tử nhập cảnh 1 lần hoặc 2 lần.", image: "/images/services/hk-tourist.png", icon: "flight_takeoff", detailId: "hk-tourist" },
+          { title: "E-Visa Công Tác", description: "Dành cho thương nhân dự hội chợ, họp đối tác.", image: "/images/services/hk-business.png", icon: "business_center", detailId: "hk-business" },
+          { title: "Visa Thăm Thân", description: "Thăm con cái, vợ chồng đang làm việc tại HK.", image: "/images/services/hk-family.png", icon: "family_restroom", detailId: "hk-family" },
       ],
       process: [
         { number: 1, title: "Chuẩn Bị", description: "Scan hộ chiếu và hồ sơ theo quy chuẩn.", icon: "scanner" },
@@ -344,7 +344,7 @@ export const PAGES: Record<string, PageData> = {
           title: "Dịch Vụ Visa Hong Kong",
           highlight: "Trọn Gói & Uy Tín",
           description: "Chuyên xử lý E-Visa Hong Kong (Du lịch, Công tác) cho khách Việt Nam. Cam kết tỷ lệ đậu cao, hỗ trợ giải trình hồ sơ tài chính và công việc tự do.",
-          backgroundImage: "https://picsum.photos/seed/hongkongnight/1920/1080",
+          backgroundImage: "/images/destinations/hong-kong.png",
           buttonPrimary: "Tư Vấn Báo Giá",
           buttonSecondary: "Thủ Tục E-Visa",
           buttonSecondaryIcon: "article"
@@ -358,9 +358,9 @@ export const PAGES: Record<string, PageData> = {
       navItems: [{ label: "Visa Đài Loan", href: "#services" }, { label: "Quy Trình", href: "#process" }, { label: "Điều Kiện", href: "#" }],
       stats: [{ icon: "verified", label: "Tỷ Lệ Đậu", value: "99%" }, ...COMMON_STATS, { icon: "speed", label: "TAC E-Visa", value: "Trong Ngày" }],
       services: [
-          { title: "E-Visa (Miễn Thị Thực TAC)", description: "Dành cho khách có visa Mỹ, Úc, Nhật, Âu... còn hạn hoặc hết hạn <10 năm.", image: "https://picsum.photos/seed/taipei101/800/600", icon: "travel_explore", detailId: "tw-tac" },
-          { title: "Visa Du Lịch Dán (Hồ sơ)", description: "Nộp trực tiếp tại văn phòng kinh tế Đài Bắc (TECO).", image: "https://picsum.photos/seed/jiufen/800/600", icon: "article", detailId: "tw-sticker" },
-          { title: "Visa Quan Hồng (Đoàn)", description: "Dành cho đoàn du lịch qua công ty lữ hành chỉ định.", image: "https://picsum.photos/seed/kaohsiung/800/600", icon: "groups", detailId: "tw-sticker" },
+          { title: "E-Visa (Miễn Thị Thực TAC)", description: "Dành cho khách có visa Mỹ, Úc, Nhật, Âu... còn hạn hoặc hết hạn <10 năm.", image: "/images/services/tw-tac.png", icon: "travel_explore", detailId: "tw-tac" },
+          { title: "Visa Du Lịch Dán (Hồ sơ)", description: "Nộp trực tiếp tại văn phòng kinh tế Đài Bắc (TECO).", image: "/images/services/tw-sticker.png", icon: "article", detailId: "tw-sticker" },
+          { title: "Visa Quan Hồng (Đoàn)", description: "Dành cho đoàn du lịch qua công ty lữ hành chỉ định.", image: "/images/services/tw-sticker.png", icon: "groups", detailId: "tw-sticker" },
       ],
       process: [
         { number: 1, title: "Check Điều Kiện", description: "Kiểm tra xem có đủ điều kiện làm TAC miễn phí không.", icon: "fact_check" },
@@ -373,7 +373,7 @@ export const PAGES: Record<string, PageData> = {
           title: "Visa Đài Loan",
           highlight: "E-Visa / Dán",
           description: "Hỗ trợ xin E-visa Đài Loan (TAC) miễn phí nếu đủ điều kiện. Dịch vụ làm visa dán bao đậu, xử lý hồ sơ không có BHXH/VssID.",
-          backgroundImage: "https://picsum.photos/seed/sunmoonlake/1920/1080",
+          backgroundImage: "/images/destinations/dai-loan.png",
           buttonPrimary: "Check Điều Kiện TAC",
           buttonSecondary: "Hồ Sơ Visa Dán",
           buttonSecondaryIcon: "description"
@@ -387,9 +387,9 @@ export const PAGES: Record<string, PageData> = {
       navItems: [{ label: "Visa Dubai", href: "#services" }, { label: "Quy Trình", href: "#process" }, { label: "Bảng Phí", href: "#" }],
       stats: [{ icon: "verified", label: "Tỷ Lệ Đậu", value: "99%" }, ...COMMON_STATS, { icon: "bolt", label: "Visa Khẩn", value: "4-8 Giờ" }],
       services: [
-          { title: "E-Visa Du Lịch 30 Ngày", description: "Nhập cảnh 1 lần, lưu trú 30 ngày. Phổ biến nhất.", image: "https://picsum.photos/seed/dubai/800/600", icon: "luggage", detailId: "uae-tourist" },
-          { title: "Visa 2 Tháng (60 Ngày)", description: "Dành cho khách đi thăm thân hoặc công tác dài hạn.", image: "https://picsum.photos/seed/abudhabi/800/600", icon: "date_range", detailId: "uae-60days" },
-          { title: "Visa Transit 48h/96h", description: "Dành cho khách quá cảnh tại sân bay Dubai/Abu Dhabi.", image: "https://picsum.photos/seed/emirates/800/600", icon: "transit_enterexit", detailId: "uae-transit" },
+          { title: "E-Visa Du Lịch 30 Ngày", description: "Nhập cảnh 1 lần, lưu trú 30 ngày. Phổ biến nhất.", image: "/images/services/uae-tourist.png", icon: "luggage", detailId: "uae-tourist" },
+          { title: "Visa 2 Tháng (60 Ngày)", description: "Dành cho khách đi thăm thân hoặc công tác dài hạn.", image: "/images/services/uae-60days.png", icon: "date_range", detailId: "uae-60days" },
+          { title: "Visa Transit 48h/96h", description: "Dành cho khách quá cảnh tại sân bay Dubai/Abu Dhabi.", image: "/images/services/uae-transit.png", icon: "transit_enterexit", detailId: "uae-transit" },
       ],
       process: [
         { number: 1, title: "Gửi Hồ Sơ", description: "Chỉ cần chụp ảnh Hộ chiếu + Ảnh thẻ.", icon: "upload_file" },
@@ -402,7 +402,7 @@ export const PAGES: Record<string, PageData> = {
           title: "Visa Dubai",
           highlight: "Chỉ Cần Hộ Chiếu",
           description: "Dịch vụ làm E-Visa Dubai (UAE) nhanh chóng, uy tín. Không cần chứng minh tài chính, không cần đặt cọc chống trốn (cho khách có lịch sử du lịch tốt). Hỗ trợ vé máy bay và khách sạn.",
-          backgroundImage: "https://picsum.photos/seed/burjkhalifa/1920/1080",
+          backgroundImage: "/images/destinations/dubai.png",
           buttonPrimary: "Làm Visa Ngay",
           buttonSecondary: "Bảng Giá",
           buttonSecondaryIcon: "price_check"
@@ -416,9 +416,9 @@ export const PAGES: Record<string, PageData> = {
       navItems: [{ label: "E-Visa Nga", href: "#services" }, { label: "Quy Trình", href: "#process" }, { label: "Bảng Phí", href: "#" }],
       stats: [{ icon: "verified", label: "Tỷ Lệ Đậu", value: "98%" }, ...COMMON_STATS, { icon: "timer", label: "E-Visa", value: "4 Ngày" }],
       services: [
-          { title: "Unified E-Visa", description: "Visa điện tử 16 ngày, thủ tục online 100%.", image: "https://picsum.photos/seed/redsquare/800/600", icon: "laptop_chromebook", detailId: "ru-evisa" },
-          { title: "Visa Du Lịch (Dán)", description: "Lưu trú tới 30 ngày hoặc 3 năm nhiều lần.", image: "https://picsum.photos/seed/stbasil/800/600", icon: "confirmation_number", detailId: "ru-sticker" },
-          { title: "Visa Công Tác", description: "Dành cho đối tác làm việc, khảo sát thị trường.", image: "https://picsum.photos/seed/moscowcity/800/600", icon: "business_center", detailId: "ru-business" },
+          { title: "Unified E-Visa", description: "Visa điện tử 16 ngày, thủ tục online 100%.", image: "/images/services/ru-evisa.png", icon: "laptop_chromebook", detailId: "ru-evisa" },
+          { title: "Visa Du Lịch (Dán)", description: "Lưu trú tới 30 ngày hoặc 3 năm nhiều lần.", image: "/images/services/ru-sticker.png", icon: "confirmation_number", detailId: "ru-sticker" },
+          { title: "Visa Công Tác", description: "Dành cho đối tác làm việc, khảo sát thị trường.", image: "/images/services/ru-business.png", icon: "business_center", detailId: "ru-business" },
       ],
       process: [
         { number: 1, title: "Chuẩn Bị", description: "Chụp ảnh hộ chiếu và ảnh thẻ mềm.", icon: "upload_file" },
@@ -431,7 +431,7 @@ export const PAGES: Record<string, PageData> = {
           title: "Visa Nga",
           highlight: "E-Visa 16 Ngày",
           description: "Khám phá nước Nga vĩ đại dễ dàng hơn với E-Visa điện tử mới. Thủ tục đơn giản, không cần thư mời gốc, xét duyệt nhanh chóng.",
-          backgroundImage: "https://picsum.photos/seed/moscow/1920/1080",
+          backgroundImage: "/images/destinations/nga.png",
           buttonPrimary: "Làm E-Visa Ngay",
           buttonSecondary: "Visa Dán 30 Ngày",
           buttonSecondaryIcon: "contact_page"
@@ -445,9 +445,9 @@ export const PAGES: Record<string, PageData> = {
       navItems: [{ label: "Visa Nam Phi", href: "#services" }, { label: "Quy Trình", href: "#process" }, { label: "Lưu Ý", href: "#" }],
       stats: [{ icon: "verified", label: "Tỷ Lệ Đậu", value: "92%" }, ...COMMON_STATS],
       services: [
-          { title: "Visa Du Lịch", description: "Khám phá Cape Town, Safari. Visa dán 3 tháng.", image: "https://picsum.photos/seed/capetown/800/600", icon: "landscape", detailId: "za-tourist" },
-          { title: "Visa Công Tác", description: "Thương mại, hội nghị. Cần thư mời chuẩn.", image: "https://picsum.photos/seed/johannesburg/800/600", icon: "business_center", detailId: "za-business" },
-          { title: "Visa Thăm Thân", description: "Thăm người nhà đang sinh sống tại Nam Phi.", image: "https://picsum.photos/seed/safari/800/600", icon: "family_restroom", detailId: "za-visit" },
+          { title: "Visa Du Lịch", description: "Khám phá Cape Town, Safari. Visa dán 3 tháng.", image: "/images/services/za-tourist.png", icon: "landscape", detailId: "za-tourist" },
+          { title: "Visa Công Tác", description: "Thương mại, hội nghị. Cần thư mời chuẩn.", image: "/images/services/za-business.png", icon: "business_center", detailId: "za-business" },
+          { title: "Visa Thăm Thân", description: "Thăm người nhà đang sinh sống tại Nam Phi.", image: "/images/services/za-visit.png", icon: "family_restroom", detailId: "za-visit" },
       ],
       process: [
         { number: 1, title: "Chuẩn Bị", description: "Dịch thuật công chứng hồ sơ sang tiếng Anh.", icon: "translate" },
@@ -460,7 +460,7 @@ export const PAGES: Record<string, PageData> = {
           title: "Visa Nam Phi",
           highlight: "Trọn Gói",
           description: "Dịch vụ làm visa Nam Phi uy tín. Hỗ trợ khai form DHA-84 chuẩn xác, dịch thuật công chứng và nộp hồ sơ thay (tùy trường hợp). Tư vấn tiêm phòng Sốt vàng da.",
-          backgroundImage: "https://picsum.photos/seed/tablemountain/1920/1080",
+          backgroundImage: "/images/destinations/nam-phi.png",
           buttonPrimary: "Tư Vấn Ngay",
           buttonSecondary: "Thủ Tục",
           buttonSecondaryIcon: "list"
@@ -474,9 +474,9 @@ export const PAGES: Record<string, PageData> = {
       navItems: [{ label: "E-Visa Ấn Độ", href: "#services" }, { label: "Quy Trình", href: "#process" }, { label: "Bảng Phí", href: "#" }],
       stats: [{ icon: "verified", label: "Tỷ Lệ Đậu", value: "99%" }, ...COMMON_STATS, { icon: "timer", label: "Xét Duyệt", value: "3-5 Ngày" }],
       services: [
-          { title: "E-Visa Du Lịch 30 Ngày", description: "Nhập cảnh 2 lần (Double Entry).", image: "https://picsum.photos/seed/tajmahal/800/600", icon: "temple_hindu", detailId: "in-tourist" },
-          { title: "E-Visa 1 Năm / 5 Năm", description: "Nhập cảnh nhiều lần (Multiple Entry).", image: "https://picsum.photos/seed/varanasi/800/600", icon: "history_edu", detailId: "in-tourist" },
-          { title: "E-Visa Thương Mại", description: "Dành cho doanh nhân, thời hạn 1 năm.", image: "https://picsum.photos/seed/mumbai/800/600", icon: "business_center", detailId: "in-business" },
+          { title: "E-Visa Du Lịch 30 Ngày", description: "Nhập cảnh 2 lần (Double Entry).", image: "/images/services/in-tourist.png", icon: "temple_hindu", detailId: "in-tourist" },
+          { title: "E-Visa 1 Năm / 5 Năm", description: "Nhập cảnh nhiều lần (Multiple Entry).", image: "/images/services/in-tourist.png", icon: "history_edu", detailId: "in-tourist" },
+          { title: "E-Visa Thương Mại", description: "Dành cho doanh nhân, thời hạn 1 năm.", image: "/images/services/in-business.png", icon: "business_center", detailId: "in-business" },
       ],
       process: [
         { number: 1, title: "Gửi Hồ Sơ", description: "Chụp ảnh hộ chiếu và ảnh thẻ mềm.", icon: "upload_file" },
@@ -489,7 +489,7 @@ export const PAGES: Record<string, PageData> = {
           title: "Visa Ấn Độ Online",
           highlight: "Nhanh & Tiện Lợi",
           description: "Dịch vụ làm E-Visa Ấn Độ trọn gói. Xử lý ảnh thẻ chuẩn vuông, khai form chính xác, cam kết tỷ lệ đậu cao. Không cần gửi hộ chiếu gốc.",
-          backgroundImage: "https://picsum.photos/seed/tajmahal/1920/1080",
+          backgroundImage: "/images/destinations/an-do.png",
           buttonPrimary: "Làm E-Visa Ngay",
           buttonSecondary: "Bảng Phí",
           buttonSecondaryIcon: "price_check"
@@ -503,9 +503,9 @@ export const PAGES: Record<string, PageData> = {
       navItems: [{ label: "Visa Ai Cập", href: "#services" }, { label: "Quy Trình", href: "#process" }, { label: "Lưu Ý", href: "#" }],
       stats: [{ icon: "verified", label: "Tỷ Lệ Đậu", value: "96%" }, ...COMMON_STATS, { icon: "calendar_month", label: "Xử Lý", value: "7-10 Ngày" }],
       services: [
-          { title: "Visa Du Lịch (Dán)", description: "Nộp trực tiếp tại ĐSQ. An toàn nhất.", image: "https://picsum.photos/seed/pyramids/800/600", icon: "confirmation_number", detailId: "eg-tourist" },
-          { title: "Visa Công Tác", description: "Thương mại, khảo sát thị trường.", image: "https://picsum.photos/seed/cairo/800/600", icon: "business_center", detailId: "eg-business" },
-          { title: "Visa Thăm Thân", description: "Thăm người nhà đang sinh sống tại Ai Cập.", image: "https://picsum.photos/seed/nile/800/600", icon: "family_restroom", detailId: "eg-visit" },
+          { title: "Visa Du Lịch (Dán)", description: "Nộp trực tiếp tại ĐSQ. An toàn nhất.", image: "/images/services/eg-tourist.png", icon: "confirmation_number", detailId: "eg-tourist" },
+          { title: "Visa Công Tác", description: "Thương mại, khảo sát thị trường.", image: "/images/services/eg-business.png", icon: "business_center", detailId: "eg-business" },
+          { title: "Visa Thăm Thân", description: "Thăm người nhà đang sinh sống tại Ai Cập.", image: "/images/services/eg-visit.png", icon: "family_restroom", detailId: "eg-visit" },
       ],
       process: [
         { number: 1, title: "Chuẩn Bị", description: "Dịch thuật hồ sơ sang tiếng Anh/Pháp.", icon: "translate" },
@@ -518,7 +518,7 @@ export const PAGES: Record<string, PageData> = {
           title: "Visa Ai Cập",
           highlight: "Trọn Gói",
           description: "Dịch vụ làm visa Ai Cập uy tín (Visa dán). Hỗ trợ nộp thay tại Đại sứ quán Hà Nội cho khách hàng toàn quốc. Tư vấn quy định mang tiền mặt khi nhập cảnh.",
-          backgroundImage: "https://picsum.photos/seed/pyramids/1920/1080",
+          backgroundImage: "/images/destinations/ai-cap.png",
           buttonPrimary: "Tư Vấn Ngay",
           buttonSecondary: "Thủ Tục",
           buttonSecondaryIcon: "list"
@@ -529,22 +529,22 @@ export const PAGES: Record<string, PageData> = {
 };
 
 export const COUNTRIES_SUMMARY: CountrySummary[] = [
-  { id: "usa", name: "Mỹ", badge: "Hot", description: "Visa 1 năm, phỏng vấn trực tiếp", image: "https://picsum.photos/seed/statueofliberty/600/400" },
-  { id: "uk", name: "Anh Quốc", badge: "Phổ biến", description: "Visa 6 tháng, 2/5/10 năm", image: "https://picsum.photos/seed/bigbenclock/600/400" },
-  { id: "schengen", name: "Châu Âu", badge: "Cao cấp", description: "29 nước khối Schengen", image: "https://picsum.photos/seed/eiffeltower/600/400" },
-  { id: "australia", name: "Úc", badge: "E-Visa", description: "Nộp online, visa 1-3 năm", image: "https://picsum.photos/seed/sydneyopera/600/400" },
-  { id: "canada", name: "Canada", badge: "10 Năm", description: "Visa theo hạn hộ chiếu", image: "https://picsum.photos/seed/niagara/600/400" },
-  { id: "newzealand", name: "New Zealand", badge: "Online", description: "Visa điện tử tiện lợi", image: "https://picsum.photos/seed/hobbiton/600/400" },
-  { id: "japan", name: "Nhật Bản", badge: "Nhanh", description: "E-visa đoàn hoặc dán", image: "https://picsum.photos/seed/fuji/600/400" },
-  { id: "korea", name: "Hàn Quốc", badge: "Trend", description: "Đại đô thị & 5 năm", image: "https://picsum.photos/seed/seoul/600/400" },
-  { id: "china", name: "Trung Quốc", badge: "Dễ", description: "Visa đoàn & thương mại", image: "https://picsum.photos/seed/greatwall/600/400" },
-  { id: "hongkong", name: "Hong Kong", badge: "E-Visa", description: "Visa điện tử 100%", image: "https://picsum.photos/seed/hongkongnight/600/400" },
-  { id: "taiwan", name: "Đài Loan", badge: "Miễn phí", description: "Có điều kiện miễn thị thực", image: "https://picsum.photos/seed/taipei101/600/400" },
-  { id: "uae", name: "Dubai (UAE)", badge: "24h", description: "Visa điện tử nhanh gọn", image: "https://picsum.photos/seed/burjkhalifa/600/400" },
-  { id: "russia", name: "Nga", badge: "E-Visa", description: "Visa điện tử 16 ngày", image: "https://picsum.photos/seed/kremlin/600/400" },
-  { id: "southafrica", name: "Nam Phi", badge: "Safari", description: "Nộp tại ĐSQ/LSQ", image: "https://picsum.photos/seed/capetown/600/400" },
-  { id: "india", name: "Ấn Độ", badge: "E-Visa", description: "Visa 1 năm/5 năm online", image: "https://picsum.photos/seed/tajmahal/600/400" },
-  { id: "egypt", name: "Ai Cập", badge: "Kỳ quan", description: "Visa dán hoặc E-visa", image: "https://picsum.photos/seed/pyramids/600/400" },
+  { id: "usa", name: "Mỹ", badge: "Hot", description: "Visa 1 năm, phỏng vấn trực tiếp", image: "/images/destinations/anh-quoc.png" },
+  { id: "uk", name: "Anh Quốc", badge: "Phổ biến", description: "Visa 6 tháng, 2/5/10 năm", image: "/images/destinations/anh-quoc.png" },
+  { id: "schengen", name: "Châu Âu", badge: "Cao cấp", description: "29 nước khối Schengen", image: "/images/destinations/my.png" },
+  { id: "australia", name: "Úc", badge: "E-Visa", description: "Nộp online, visa 1-3 năm", image: "/images/destinations/chau-au.png" },
+  { id: "canada", name: "Canada", badge: "10 Năm", description: "Visa theo hạn hộ chiếu", image: "/images/destinations/uc.png" },
+  { id: "newzealand", name: "New Zealand", badge: "Online", description: "Visa điện tử tiện lợi", image: "/images/destinations/canada.png" },
+  { id: "japan", name: "Nhật Bản", badge: "Nhanh", description: "E-visa đoàn hoặc dán", image: "/images/destinations/new-zealand.png" },
+  { id: "korea", name: "Hàn Quốc", badge: "Trend", description: "Đại đô thị & 5 năm", image: "/images/destinations/nhat-ban.png" },
+  { id: "china", name: "Trung Quốc", badge: "Dễ", description: "Visa đoàn & thương mại", image: "/images/destinations/han-quoc.png" },
+  { id: "hongkong", name: "Hong Kong", badge: "E-Visa", description: "Visa điện tử 100%", image: "/images/destinations/trung-quoc.png" },
+  { id: "taiwan", name: "Đài Loan", badge: "Miễn phí", description: "Có điều kiện miễn thị thực", image: "/images/destinations/hong-kong.png" },
+  { id: "uae", name: "Dubai (UAE)", badge: "24h", description: "Visa điện tử nhanh gọn", image: "/images/destinations/dai-loan.png" },
+  { id: "russia", name: "Nga", badge: "E-Visa", description: "Visa điện tử 16 ngày", image: "/images/destinations/dubai.png" },
+  { id: "southafrica", name: "Nam Phi", badge: "Safari", description: "Nộp tại ĐSQ/LSQ", image: "/images/destinations/nga.png" },
+  { id: "india", name: "Ấn Độ", badge: "E-Visa", description: "Visa 1 năm/5 năm online", image: "/images/destinations/nam-phi.png" },
+  { id: "egypt", name: "Ai Cập", badge: "Kỳ quan", description: "Visa dán hoặc E-visa", image: "/images/destinations/an-do.png" },
 ];
 
 export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
@@ -553,7 +553,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
     id: "usa-b1b2",
     parentId: "usa",
     title: "Visa Mỹ B1/B2 (Du Lịch & Công Tác)",
-    heroImage: "https://picsum.photos/seed/statueofliberty/1920/1080",
+    heroImage: "/images/services/usa-b1b2.png",
     overview: "Visa B1/B2 (Visitor Visa) là loại thị thực không định cư dành cho người muốn đến Mỹ tạm thời để công tác (B-1), du lịch (B-2) hoặc kết hợp cả hai. Thời hạn visa thường là 1 năm nhưng cho phép nhập cảnh nhiều lần (Multiple Entry). Yếu tố quyết định thành bại nằm ở vòng phỏng vấn trực tiếp 3-5 phút với viên chức Lãnh sự.",
     benefits: [
       "Quyền lực 'Passport thứ 2': Dễ dàng xin visa Canada, Châu Âu, Anh Quốc.",
@@ -585,7 +585,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "usa-f1",
       parentId: "usa",
       title: "Visa Du Học Mỹ (F1)",
-      heroImage: "https://picsum.photos/seed/harvard/1920/1080",
+      heroImage: "/images/services/usa-f1.png",
       overview: "Visa F1 dành cho du học sinh tham gia các chương trình học thuật toàn thời gian tại các trường được chứng nhận (SEVP). Đây là một trong những loại visa khó nhất vì viên chức Lãnh sự luôn nghi ngờ mục đích định cư (Immigrant Intent). Chìa khóa thành công nằm ở việc chứng minh lộ trình học tập hợp lý, năng lực tài chính của gia đình và kế hoạch quay về Việt Nam rõ ràng.",
       benefits: ["Được phép làm thêm trong trường (on-campus) 20h/tuần.", "Cơ hội ở lại thực tập (OPT) từ 1-3 năm sau khi tốt nghiệp.", "Vợ/chồng và con cái được đi cùng (Visa F2)."],
       requirements: [
@@ -599,7 +599,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "usa-renewal",
       parentId: "usa",
       title: "Gia Hạn Visa Mỹ (Qua Bưu Điện)",
-      heroImage: "https://picsum.photos/seed/usapassport/1920/1080",
+      heroImage: "/images/services/usa-renewal.png",
       overview: "Chương trình gia hạn visa qua đường bưu điện (Interview Waiver) cho phép bạn làm mới visa mà không cần đến Đại sứ quán phỏng vấn lại. Đây là cách thuận tiện nhất để duy trì thị thực Mỹ. Tuy nhiên, quy định mới từ 2025 đã siết chặt thời gian visa hết hạn.",
       benefits: ["Không cần phỏng vấn lại.", "Không cần lấy lại vân tay.", "Tiết kiệm thời gian và chi phí đi lại."],
       requirements: [
@@ -617,7 +617,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "uk-tourist",
       parentId: "uk",
       title: "Visa Anh Quốc (Standard Visitor)",
-      heroImage: "https://picsum.photos/seed/londonbus/1920/1080",
+      heroImage: "/images/services/uk-tourist.png",
       overview: "Standard Visitor Visa là loại thị thực phổ biến nhất dành cho khách du lịch tự túc muốn khám phá Vương quốc Anh (London, Scotland, Wales, Bắc Ireland). Khác với khối Schengen, Anh Quốc xét duyệt hồ sơ cực kỳ kỹ lưỡng về 'Nguồn gốc tài chính' (Provenance of Funds). Số tiền trong sổ tiết kiệm không quan trọng bằng việc bạn chứng minh số tiền đó Ở ĐÂU RA. Mọi giấy tờ nộp vào đều phải được dịch thuật sang tiếng Anh.",
       benefits: ["Thời hạn visa 6 tháng, nhập cảnh nhiều lần (Multiple Entry).", "Được phép tham gia các khóa học ngắn hạn dưới 30 ngày.", "Có thể nâng cấp lên visa dài hạn 2 năm, 5 năm hoặc 10 năm nếu lịch sử đi lại tốt.", "Thời gian xét duyệt minh bạch (có gói Khẩn 5 ngày)."],
       requirements: [
@@ -635,7 +635,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "uk-family",
       parentId: "uk",
       title: "Visa Thăm Thân Anh Quốc",
-      heroImage: "https://picsum.photos/seed/englandhome/1920/1080",
+      heroImage: "/images/services/uk-family.png",
       overview: "Dành cho cha mẹ muốn sang thăm con cái đang du học, dự lễ tốt nghiệp hoặc thăm người thân đang định cư tại Anh. Hồ sơ thăm thân yêu cầu sự rõ ràng về mối quan hệ và tình trạng cư trú hợp pháp của người mời tại Anh.",
       benefits: ["Tỷ lệ đậu cao hơn du lịch tự túc nếu người mời có công việc ổn định.", "Thời gian lưu trú lên đến 6 tháng.", "Được phép kết hợp du lịch cùng gia đình."],
       requirements: [
@@ -650,7 +650,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "uk-business",
       parentId: "uk",
       title: "Visa Công Tác Anh Quốc",
-      heroImage: "https://picsum.photos/seed/canarywharf/1920/1080",
+      heroImage: "/images/services/uk-business.png",
       overview: "Dành cho các chuyến đi thương mại, dự hội nghị, hội thảo, đàm phán hợp đồng hoặc khảo sát thị trường tại Anh. Loại visa này cấm làm việc hưởng lương tại Anh.",
       benefits: ["Hỗ trợ xuất hóa đơn VAT cho doanh nghiệp.", "Xử lý hồ sơ nhanh chóng, chuyên nghiệp."],
       requirements: [
@@ -665,7 +665,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "schengen-france",
       parentId: "schengen",
       title: "Visa Pháp (Schengen)",
-      heroImage: "https://picsum.photos/seed/paris/1920/1080",
+      heroImage: "/images/services/schengen-france.png",
       overview: "Pháp là quốc gia cấp visa Schengen phổ biến nhất và thường có thời gian xét duyệt ổn định. Visa Schengen cho phép bạn tự do đi lại 29 nước trong khối. Tuy nhiên, bạn bắt buộc phải tuân thủ quy tắc 'Điểm đến chính' (Main Destination): Pháp phải là nơi ở lâu nhất, hoặc là nơi nhập cảnh đầu tiên nếu thời gian ở các nước bằng nhau.",
       benefits: ["Tự do đi lại 29 nước Châu Âu (Pháp, Đức, Ý, Hà Lan...)", "Hồ sơ xét duyệt tương đối nhanh (7-15 ngày)", "Cơ hội nhận visa dài hạn (Circulation Visa 1-5 năm) nếu lịch sử du lịch tốt"],
       requirements: [
@@ -682,7 +682,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "schengen-business",
       parentId: "schengen",
       title: "Visa Công Tác Châu Âu (Schengen)",
-      heroImage: "https://picsum.photos/seed/berlin/1920/1080",
+      heroImage: "/images/services/schengen-business.png",
       overview: "Dành cho các chuyến đi thương mại, dự hội chợ, gặp gỡ đối tác tại khối Schengen. Yếu tố quan trọng nhất là Thư mời từ phía đối tác Châu Âu và bằng chứng mối quan hệ hợp tác giữa hai bên.",
       benefits: ["Được phép tham gia các hoạt động thương mại", "Có thể xin visa nhiều lần (Multiple)"],
       requirements: [
@@ -696,7 +696,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "schengen-family",
       parentId: "schengen",
       title: "Visa Thăm Thân Châu Âu",
-      heroImage: "https://picsum.photos/seed/swissalps/1920/1080",
+      heroImage: "/images/services/schengen-family.png",
       overview: "Dành cho người muốn sang Châu Âu thăm con cái du học, dự lễ tốt nghiệp hoặc thăm người thân định cư. Thủ tục này yêu cầu giấy tờ bảo lãnh từ phía bên Châu Âu.",
       benefits: ["Được bảo lãnh chỗ ở", "Tỷ lệ đậu cao nếu người mời uy tín"],
       requirements: [
@@ -711,7 +711,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "au-600",
       parentId: "australia",
       title: "Visa Úc 600 (Du Lịch & Công Tác)",
-      heroImage: "https://picsum.photos/seed/sydneyopera/1920/1080",
+      heroImage: "/images/services/au-600.png",
       overview: "Visa 600 là loại thị thực phổ biến nhất, cho phép nhập cảnh Úc để du lịch, thăm thân hoặc công tác ngắn hạn. Úc áp dụng hệ thống xét duyệt E-Visa hiện đại, hồ sơ được nộp 100% Online qua cổng ImmiAccount và KHÔNG giữ hộ chiếu gốc. Yếu tố quan trọng nhất là chứng minh được mục đích chuyến đi thực sự (GTE) và khả năng tài chính.",
       benefits: ["Nộp Online 100%, không cần nộp hộ chiếu gốc (rất tiện nếu cần đi nước khác)", "Nhận kết quả qua Email (File PDF), không sợ thất lạc hộ chiếu", "Thời hạn linh hoạt: 1 năm, 3 năm (tùy lịch sử du lịch)", "Được phép nhập cảnh nhiều lần (Multiple Entry)"],
       requirements: [
@@ -732,7 +732,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "ca-visitor",
       parentId: "canada",
       title: "Visa Du Lịch Canada (V1)",
-      heroImage: "https://picsum.photos/seed/niagarafalls/1920/1080",
+      heroImage: "/images/services/ca-visitor.png",
       overview: "Visa Canada (Visitor Visa - V1) được cấp với thời hạn lên đến 10 năm (theo hộ chiếu), cho phép nhập cảnh nhiều lần. Đây là một trong những visa 'quyền lực' nhất thế giới. Tuy nhiên, thời gian xét duyệt của Canada khá lâu. Đặc biệt, nếu bạn đã có Visa Mỹ (Non-immigrant), bạn có thể nộp theo chương trình CAN+ để được MIỄN chứng minh tài chính và xét duyệt nhanh hơn.",
       benefits: ["Thời hạn visa siêu dài (đến 10 năm)", "Nhập cảnh nhiều lần (Multiple Entry)", "Miễn chứng minh tài chính nếu nộp theo diện CAN+ (Có visa Mỹ còn hạn)"],
       requirements: [
@@ -750,7 +750,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "ca-super",
       parentId: "canada",
       title: "Super Visa (Siêu Visa Thăm Thân)",
-      heroImage: "https://picsum.photos/seed/vancouver/1920/1080",
+      heroImage: "/images/services/ca-super.png",
       overview: "Super Visa là loại thị thực đặc biệt dành riêng cho Ông bà/Cha mẹ muốn sang Canada thăm con cháu dài hạn. Khác với visa du lịch thông thường chỉ cho phép ở lại 6 tháng mỗi lần, Super Visa cho phép ở lại LIÊN TỤC lên đến 5 năm (có thể gia hạn thêm 2 năm) mà không cần phải xuất cảnh.",
       benefits: ["Thời gian lưu trú liên tục 5 năm mỗi lần nhập cảnh", "Visa có giá trị 10 năm, nhập cảnh nhiều lần", "Giải pháp tuyệt vời để đoàn tụ gia đình trong lúc chờ bảo lãnh định cư"],
       requirements: [
@@ -763,7 +763,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "ca-student",
       parentId: "canada",
       title: "Visa Du Học Canada (SDS / Non-SDS)",
-      heroImage: "https://picsum.photos/seed/ubc/1920/1080",
+      heroImage: "/images/services/ca-student.png",
       overview: "Du học Canada là con đường định cư phổ biến nhất. Có 2 diện chính: SDS (Miễn chứng minh tài chính, yêu cầu IELTS 6.0) và Non-SDS (Chứng minh tài chính thông thường). Việc chọn diện nộp phụ thuộc vào năng lực học tập và tài chính của gia đình.",
       benefits: ["Cơ hội định cư cao sau khi tốt nghiệp (PGWP)", "Được phép làm thêm 20h/tuần"],
       requirements: [
@@ -778,7 +778,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "nz-visitor",
       parentId: "newzealand",
       title: "Visa Du Lịch New Zealand (Visitor Visa)",
-      heroImage: "https://picsum.photos/seed/hobbiton/1920/1080",
+      heroImage: "/images/services/nz-visitor.png",
       overview: "New Zealand (Aotearoa) áp dụng hệ thống xét duyệt visa online hiện đại thông qua tài khoản RealMe. Đây là một trong những quốc gia có quy trình xét duyệt nghiêm ngặt nhất về tính trung thực của hồ sơ. Đặc biệt, New Zealand yêu cầu tất cả giấy tờ tiếng Việt phải được dịch thuật công chứng sang tiếng Anh. Ngoài phí visa, du khách cũng phải đóng thêm phí Bảo tồn và Du lịch quốc tế (IVL).",
       benefits: ["Visa điện tử (E-Visa), không dán tem vào hộ chiếu", "Cho phép nộp hồ sơ theo nhóm gia đình (Group) để xét duyệt đồng bộ", "Thường cấp visa ra vào nhiều lần (Multiple Entry)"],
       requirements: [
@@ -795,7 +795,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "nz-family",
       parentId: "newzealand",
       title: "Visa Thăm Thân New Zealand",
-      heroImage: "https://picsum.photos/seed/auckland/1920/1080",
+      heroImage: "/images/services/nz-family.png",
       overview: "Dành cho cha mẹ, vợ/chồng hoặc người thân muốn sang New Zealand thăm con cái đang du học hoặc làm việc. Hồ sơ thăm thân New Zealand yêu cầu sự rõ ràng về mối quan hệ và khả năng tài chính của người bảo lãnh (Sponsor) tại New Zealand.",
       benefits: ["Tỷ lệ đậu cao nếu người bảo lãnh có công việc ổn định", "Thời gian lưu trú linh hoạt theo thư mời"],
       requirements: [
@@ -810,7 +810,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "jp-tourist",
       parentId: "japan",
       title: "Visa Du Lịch Nhật Bản (Tự Túc)",
-      heroImage: "https://picsum.photos/seed/fujimountain/1920/1080",
+      heroImage: "/images/services/jp-tourist.png",
       overview: "Visa du lịch Nhật Bản hiện nay đã thông thoáng hơn nhưng vẫn yêu cầu sự chỉn chu tuyệt đối về hình thức hồ sơ. Đặc biệt, Đại sứ quán Nhật Bản phân chia vùng nộp hồ sơ rất rõ ràng (Hà Nội & TP.HCM). Hồ sơ không cần phỏng vấn nhưng phải chứng minh được năng lực tài chính mạnh (Sổ tiết kiệm > 200 triệu) và công việc ổn định.",
       benefits: ["Không cần phỏng vấn (trừ trường hợp đặc biệt)", "Thời gian xét duyệt chuẩn (7-8 ngày làm việc)", "Visa có giá trị 3 tháng, lưu trú tối đa 15 ngày"],
       requirements: [
@@ -827,7 +827,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "jp-business",
       parentId: "japan",
       title: "Visa Thương Mại Nhật Bản",
-      heroImage: "https://picsum.photos/seed/osaka/1920/1080",
+      heroImage: "/images/services/jp-business.png",
       overview: "Dành cho khách hàng sang Nhật công tác, dự hội thảo, đàm phán hợp đồng. Yếu tố quan trọng nhất của diện này là bộ hồ sơ gốc từ phía đối tác Nhật Bản gửi về (bao gồm Thư mời và Thư bảo lãnh).",
       benefits: ["Được phép tham gia các hoạt động thương mại hợp pháp", "Có thể xin visa nhiều lần (Multiple 5 năm) nếu đủ điều kiện"],
       requirements: [
@@ -842,7 +842,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "jp-evisa",
       parentId: "japan",
       title: "E-Visa Nhật Bản (Du Lịch Đoàn)",
-      heroImage: "https://picsum.photos/seed/kyoto/1920/1080",
+      heroImage: "/logo.png",
       overview: "Hiện tại, E-Visa (Thị thực điện tử) Nhật Bản chủ yếu áp dụng cho khách du lịch theo đoàn (Package Tour) thông qua các công ty du lịch được chỉ định. Khách nhận được thông báo cấp visa qua điện thoại để xuất trình tại sân bay.",
       benefits: ["Không dán tem vào hộ chiếu", "Thủ tục đơn giản hóa (do công ty du lịch bảo lãnh)"],
       requirements: [
@@ -857,7 +857,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "kr-5year",
       parentId: "korea",
       title: "Visa Đại Đô Thị (5 Năm)",
-      heroImage: "https://picsum.photos/seed/busan/1920/1080",
+      heroImage: "/images/services/kr-5year.png",
       overview: "Đây là loại visa 'Hot' nhất hiện nay. Dành riêng cho công dân có hộ khẩu thường trú (hoặc tạm trú dài hạn) tại 3 thành phố lớn: Hà Nội, Đà Nẵng, TP.HCM. Nếu bạn thuộc diện này, bạn được MIỄN CHỨNG MINH TÀI CHÍNH và được cấp visa 5 năm, nhập cảnh không giới hạn số lần.",
       benefits: ["Không cần sổ tiết kiệm", "Visa 5 năm Multiple Entry (Đi lúc nào cũng được)", "Thủ tục đơn giản nhất trong các loại visa Hàn"],
       requirements: [
@@ -873,7 +873,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "cn-tourist",
       parentId: "china",
       title: "Visa Trung Quốc 3 Tháng 1 Lần",
-      heroImage: "https://picsum.photos/seed/greatwall/1920/1080",
+      heroImage: "/images/services/cn-tourist.png",
       overview: "Hiện nay, Trung Quốc đã mở cửa hoàn toàn du lịch. Visa 3 tháng 1 lần (Single Entry) là loại phổ biến nhất cho khách du lịch tự túc. Khó khăn lớn nhất hiện nay là tờ khai COVA rất phức tạp (gần 20 trang thông tin) và lịch hẹn lăn tay tại trung tâm AVAS thường xuyên kín chỗ. Beetours cung cấp dịch vụ trọn gói bao gồm khai form chuẩn xác và đặt lịch lăn tay VIP, giúp bạn tiết kiệm thời gian xếp hàng.",
       benefits: ["Tỷ lệ đậu lên tới 99% (nếu hồ sơ sạch)", "Được hỗ trợ xếp lịch lăn tay sớm", "Không cần phỏng vấn (chỉ cần đến lăn tay)", "Có thể nâng cấp lên Visa 6 tháng nhiều lần nếu đã từng đi Trung Quốc"],
       requirements: [
@@ -890,7 +890,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "cn-business",
       parentId: "china",
       title: "Visa Thương Mại Trung Quốc (M)",
-      heroImage: "https://picsum.photos/seed/shanghai/1920/1080",
+      heroImage: "/images/services/cn-business.png",
       overview: "Dành cho khách hàng sang Trung Quốc công tác, làm việc với đối tác, tham dự hội chợ (Canton Fair...). Yếu tố quan trọng nhất của diện này là THƯ MỜI từ phía đối tác Trung Quốc. Thư mời phải tuân thủ đúng mẫu của Đại sứ quán, có dấu đỏ tròn (dấu bầu dục hoặc dấu sao thường bị từ chối) và chữ ký của người đại diện pháp luật.",
       benefits: ["Nhập cảnh làm việc hợp pháp", "Có thể xin loại 6 tháng/1 năm nhiều lần (Multiple) nếu lịch sử đi lại tốt", "Hỗ trợ xuất hóa đơn VAT cho doanh nghiệp"],
       requirements: [
@@ -909,7 +909,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "hk-tourist",
       parentId: "hongkong",
       title: "E-Visa Du Lịch Hong Kong",
-      heroImage: "https://picsum.photos/seed/victoriaharbour/1920/1080",
+      heroImage: "/images/services/hk-tourist.png",
       overview: "Hong Kong hiện tại áp dụng E-Visa (Thị thực điện tử) cho công dân Việt Nam, thay thế hoàn toàn cho việc nộp hồ sơ giấy dán tem trước đây. Tuy nhiên, Hong Kong là một trong những nơi xét duyệt hồ sơ khó tính nhất Châu Á. Sở Di trú (ImmD) yêu cầu hồ sơ tài chính và công việc cực kỳ rõ ràng. Thời gian xét duyệt cũng khá lâu (thường từ 4-6 tuần), vì vậy bạn cần lên kế hoạch sớm.",
       benefits: ["Nộp online 100%, không giữ hộ chiếu gốc", "Nhận kết quả qua Email (File PDF)", "Không cần phỏng vấn (trừ trường hợp đặc biệt)"],
       requirements: [
@@ -927,7 +927,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "hk-business",
       parentId: "hongkong",
       title: "Visa Công Tác Hong Kong",
-      heroImage: "https://picsum.photos/seed/centralhk/1920/1080",
+      heroImage: "/images/services/hk-business.png",
       overview: "Dành cho khách hàng có nhu cầu sang Hong Kong làm việc với đối tác, tham dự hội chợ (như Hội chợ Quà tặng, Điện tử...). Điểm mấu chốt của hồ sơ công tác là Thư mời từ phía Hong Kong và mối quan hệ thương mại giữa hai công ty.",
       benefits: ["Được phép tham gia các hoạt động thương mại hợp pháp", "Thời gian lưu trú thường là 7 ngày hoặc 14 ngày", "Hỗ trợ xuất hóa đơn VAT dịch vụ"],
       requirements: [
@@ -942,7 +942,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "hk-family",
       parentId: "hongkong",
       title: "Visa Thăm Thân Hong Kong",
-      heroImage: "https://picsum.photos/seed/hkapartment/1920/1080",
+      heroImage: "/images/services/hk-family.png",
       overview: "Dành cho người muốn sang thăm vợ/chồng, con cái đang làm việc hoặc học tập tại Hong Kong. Người bảo lãnh tại Hong Kong cần có Visa làm việc (Employment Visa) hoặc Thẻ cư trú dài hạn.",
       benefits: ["Tỷ lệ đậu cao nếu người bảo lãnh uy tín", "Thời gian lưu trú linh hoạt"],
       requirements: [
@@ -957,7 +957,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "tw-tac",
       parentId: "taiwan",
       title: "Miễn Thị Thực Đài Loan (TAC)",
-      heroImage: "https://picsum.photos/seed/taipei101/1920/1080",
+      heroImage: "/images/services/tw-tac.png",
       overview: "Đây là loại hình visa hấp dẫn nhất (Travel Authorization Certificate - TAC). Công dân Việt Nam được miễn thị thực (cấp phép online miễn phí) nếu sở hữu visa còn hạn hoặc hết hạn trong vòng 10 năm của các nước tiên tiến: Mỹ, Canada, Anh, Nhật Bản, Hàn Quốc, Úc, New Zealand và khối Schengen. Thủ tục cực nhanh, có kết quả ngay lập tức.",
       benefits: ["Miễn phí hoàn toàn lệ phí chính phủ", "Nhập cảnh nhiều lần (Multiple Entry) trong 90 ngày", "Mỗi lần lưu trú 14 ngày", "Không cần chứng minh tài chính hay công việc"],
       requirements: [
@@ -973,7 +973,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "tw-sticker",
       parentId: "taiwan",
       title: "Visa Du Lịch Đài Loan (Visa Dán)",
-      heroImage: "https://picsum.photos/seed/jiufen/1920/1080",
+      heroImage: "/images/services/tw-sticker.png",
       overview: "Dành cho khách hàng KHÔNG đủ điều kiện làm miễn thị thực (TAC). Hồ sơ xin visa dán Đài Loan hiện nay khá khó, đặc biệt là yêu cầu về Bảo hiểm xã hội và Bảo hiểm y tế để tránh tình trạng lao động bất hợp pháp. Bạn cần nộp hồ sơ trực tiếp tại Văn phòng Kinh tế Văn hóa Đài Bắc (TECO).",
       benefits: ["Thời hạn visa 3 tháng, lưu trú 14 ngày", "Được dán tem visa vào hộ chiếu", "Là cơ sở để sau này xin TAC dễ dàng hơn"],
       requirements: [
@@ -992,7 +992,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "uae-tourist",
       parentId: "uae",
       title: "E-Visa Du Lịch Dubai (30 Ngày)",
-      heroImage: "https://picsum.photos/seed/dubai/1920/1080",
+      heroImage: "/images/services/uae-tourist.png",
       overview: "Visa du lịch Dubai loại 30 ngày (Tourist Visa) là loại phổ biến nhất dành cho du khách Việt Nam. Đây là E-Visa (Thị thực điện tử), được cấp dưới dạng file PDF. Bạn chỉ cần in ra và kẹp cùng hộ chiếu khi nhập cảnh. Dubai không quá khắt khe về tài chính như Âu-Mỹ, nhưng yêu cầu sự rõ ràng về nhân thân để tránh lao động bất hợp pháp.",
       benefits: ["Thủ tục 100% Online, không giữ hộ chiếu gốc", "Không cần phỏng vấn", "Thời gian xét duyệt nhanh (thường 1-2 ngày)", "Bao đậu (với hồ sơ sạch)"],
       requirements: [
@@ -1009,7 +1009,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "uae-transit",
       parentId: "uae",
       title: "Visa Quá Cảnh Dubai (48h / 96h)",
-      heroImage: "https://picsum.photos/seed/dubai_airport/1920/1080",
+      heroImage: "/images/services/uae-transit.png",
       overview: "Nếu bạn bay của hãng Emirates hoặc Etihad và có thời gian quá cảnh (layover) tại Dubai hoặc Abu Dhabi trên 8 tiếng, bạn có thể xin visa quá cảnh để ra ngoài tham quan thành phố trong thời gian ngắn. Có 2 loại: 48 giờ (miễn phí phí chính phủ, chỉ tốn phí dịch vụ) và 96 giờ.",
       benefits: ["Tiết kiệm chi phí", "Tận dụng thời gian chờ để du lịch", "Thủ tục nhanh gọn theo vé máy bay"],
       requirements: [
@@ -1024,7 +1024,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "uae-60days",
       parentId: "uae",
       title: "Visa Dubai 2 Tháng (60 Ngày)",
-      heroImage: "https://picsum.photos/seed/abudhabi_mosque/1920/1080",
+      heroImage: "/images/services/uae-60days.png",
       overview: "Dành cho những du khách muốn khám phá sâu hơn về UAE, thăm thân nhân đang làm việc tại Dubai hoặc đi công tác dài hạn. Loại visa này cho phép lưu trú liên tục lên đến 60 ngày.",
       benefits: ["Thời gian lưu trú dài gấp đôi visa thường", "Thích hợp thăm thân, tìm hiểu thị trường"],
       requirements: [
@@ -1039,7 +1039,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "ru-evisa",
       parentId: "russia",
       title: "Unified E-Visa Nga (16 Ngày)",
-      heroImage: "https://picsum.photos/seed/redsquare/1920/1080",
+      heroImage: "/images/services/ru-evisa.png",
       overview: "Unified E-Visa (Thị thực điện tử thống nhất) là bước tiến lớn của Nga, cho phép công dân Việt Nam nhập cảnh du lịch, công tác, thăm thân ngắn hạn mà không cần thư mời gốc phức tạp. Visa có giá trị 60 ngày kể từ ngày cấp, cho phép lưu trú tối đa 16 ngày kể từ ngày nhập cảnh.",
       benefits: ["Thủ tục 100% Online", "Không cần thư mời gốc (Tourist Voucher)", "Thời gian xét duyệt nhanh (4 ngày)", "Chi phí tiết kiệm hơn visa dán"],
       requirements: [
@@ -1055,7 +1055,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "ru-sticker",
       parentId: "russia",
       title: "Visa Du Lịch Nga (Dán Sticker)",
-      heroImage: "https://picsum.photos/seed/stbasil/1920/1080",
+      heroImage: "/images/services/ru-sticker.png",
       overview: "Dành cho du khách muốn lưu trú tại Nga lâu hơn 16 ngày (thường là gói 30 ngày hoặc 90 ngày). Loại visa này được dán trực tiếp vào hộ chiếu và yêu cầu bộ hồ sơ giấy đầy đủ nộp tại Đại sứ quán/Lãnh sự quán.",
       benefits: ["Thời gian lưu trú dài hơn (tùy theo thư mời)", "Được dán tem visa kỷ niệm vào hộ chiếu", "Phù hợp đi xuyên Việt-Nga hoặc tàu hỏa xuyên Siberia"],
       requirements: [
@@ -1071,7 +1071,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "ru-business",
       parentId: "russia",
       title: "Visa Thương Mại Nga",
-      heroImage: "https://picsum.photos/seed/moscowcity/1920/1080",
+      heroImage: "/images/services/ru-business.png",
       overview: "Dành cho doanh nhân sang Nga làm việc, ký kết hợp đồng. Visa thương mại có thể cấp thời hạn 3 tháng (1 hoặc 2 lần) hoặc 1 năm (nhiều lần). Yếu tố quyết định là Thư mời từ phía Nga (thường là từ Bộ Nội vụ hoặc công ty đối tác).",
       benefits: ["Nhập cảnh làm việc hợp pháp", "Thời gian lưu trú linh hoạt", "Có thể xin visa 1 năm nhiều lần"],
       requirements: [
@@ -1087,7 +1087,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "za-tourist",
       parentId: "southafrica",
       title: "Visa Du Lịch Nam Phi",
-      heroImage: "https://picsum.photos/seed/capetown/1920/1080",
+      heroImage: "/images/services/za-tourist.png",
       overview: "Nam Phi là điểm đến hấp dẫn với thiên nhiên hoang dã và các thành phố hiện đại. Visa du lịch Nam Phi (Visitor's Visa Section 11) được cấp dưới dạng dán vào hộ chiếu. Quá trình xét duyệt yêu cầu hồ sơ tài chính minh bạch và tuân thủ nghiêm ngặt các quy định về hình thức (màu mực, khổ giấy).",
       benefits: ["Thời hạn visa 3 tháng", "Nhập cảnh 1 lần (Single) hoặc nhiều lần (nếu giải trình tốt)", "Cơ hội trải nghiệm Safari đẳng cấp thế giới"],
       requirements: [
@@ -1105,7 +1105,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "za-business",
       parentId: "southafrica",
       title: "Visa Công Tác Nam Phi",
-      heroImage: "https://picsum.photos/seed/johannesburg/1920/1080",
+      heroImage: "/images/services/za-business.png",
       overview: "Dành cho doanh nhân sang Nam Phi tham dự hội nghị, gặp gỡ đối tác, khảo sát thị trường. Điểm quan trọng nhất là Thư mời từ phía Nam Phi phải chuẩn xác.",
       benefits: ["Nhập cảnh đúng mục đích thương mại", "Thời gian lưu trú phù hợp lịch công tác"],
       requirements: [
@@ -1118,7 +1118,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "za-visit",
       parentId: "southafrica",
       title: "Visa Thăm Thân Nam Phi",
-      heroImage: "https://picsum.photos/seed/durban/1920/1080",
+      heroImage: "/images/services/za-visit.png",
       overview: "Thăm người thân, bạn bè đang sinh sống/làm việc tại Nam Phi.",
       benefits: ["Được bảo lãnh chỗ ở"],
       requirements: [
@@ -1133,7 +1133,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "in-tourist",
       parentId: "india",
       title: "E-Visa Du Lịch Ấn Độ (1 Năm / 5 Năm)",
-      heroImage: "https://picsum.photos/seed/tajmahal/1920/1080",
+      heroImage: "/images/services/in-tourist.png",
       overview: "Ấn Độ áp dụng E-Visa (Thị thực điện tử) cho công dân Việt Nam với thủ tục cực kỳ đơn giản. Bạn không cần đến Đại sứ quán, không cần gửi hộ chiếu gốc. Có các loại: 30 ngày (nhập cảnh 2 lần), 1 năm và 5 năm (nhập cảnh nhiều lần). Đây là giải pháp tối ưu cho những ai yêu thích khám phá văn hóa và tâm linh Ấn Độ.",
       benefits: ["Nộp online 100%, nhận kết quả qua email (ETA)", "Phê duyệt nhanh trong 3-5 ngày làm việc", "Visa 1 năm/5 năm cho phép nhập cảnh nhiều lần (Multiple Entry), mỗi lần ở tối đa 90 ngày"],
       requirements: [
@@ -1149,7 +1149,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "in-business",
       parentId: "india",
       title: "E-Visa Thương Mại Ấn Độ",
-      heroImage: "https://picsum.photos/seed/mumbai/1920/1080",
+      heroImage: "/images/services/in-business.png",
       overview: "Dành cho doanh nhân sang Ấn Độ làm việc, dự hội chợ, gặp gỡ đối tác. Visa thương mại có thời hạn 1 năm, nhập cảnh nhiều lần (Multiple), mỗi lần lưu trú tối đa 180 ngày.",
       benefits: ["Thời gian lưu trú dài hơn visa du lịch (180 ngày/lần)", "Thủ tục online nhanh gọn"],
       requirements: [
@@ -1164,7 +1164,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "eg-tourist",
       parentId: "egypt",
       title: "Visa Du Lịch Ai Cập (Visa Dán)",
-      heroImage: "https://picsum.photos/seed/pyramids/1920/1080",
+      heroImage: "/images/services/eg-tourist.png",
       overview: "Hiện tại, Visa dán (Sticker Visa) nộp tại Đại sứ quán là phương án an toàn nhất cho du khách Việt Nam muốn đến Ai Cập tự túc. Mặc dù có thông tin về E-visa hoặc Visa on Arrival, nhưng rủi ro bị từ chối khi check-in hoặc nhập cảnh khá cao nếu không đi theo tour đoàn lớn. Visa thường có thời hạn 3 tháng, lưu trú tối đa 30 ngày.",
       benefits: ["Đảm bảo khả năng nhập cảnh cao nhất", "Được hỗ trợ nộp thay (không cần trình diện nếu ủy quyền)", "Thời gian lưu trú linh hoạt theo lịch trình"],
       requirements: [
@@ -1181,7 +1181,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "eg-business",
       parentId: "egypt",
       title: "Visa Công Tác Ai Cập",
-      heroImage: "https://picsum.photos/seed/cairo_city/1920/1080",
+      heroImage: "/images/services/eg-business.png",
       overview: "Dành cho doanh nhân sang Ai Cập làm việc với đối tác. Yêu cầu quan trọng nhất là Thư mời gốc hoặc bản Scan màu rõ nét từ đối tác Ai Cập.",
       benefits: ["Hỗ trợ xuất hóa đơn VAT", "Xử lý nhanh hồ sơ"],
       requirements: [
@@ -1194,7 +1194,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       id: "eg-visit",
       parentId: "egypt",
       title: "Visa Thăm Thân Ai Cập",
-      heroImage: "https://picsum.photos/seed/alexandria/1920/1080",
+      heroImage: "/images/services/eg-visit.png",
       overview: "Thăm người thân đang sinh sống, học tập tại Ai Cập.",
       benefits: ["Tư vấn thư mời chuẩn", "Hỗ trợ dịch thuật"],
       requirements: [
