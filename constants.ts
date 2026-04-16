@@ -156,8 +156,8 @@ export const PAGES: Record<string, PageData> = {
     stats: [{ icon: "verified", label: "Tỷ Lệ Đậu", value: "95%" }, ...COMMON_STATS, { icon: "beach_access", label: "Visa Du Lịch", value: "5.000+" }],
     services: [
         { title: "Visa 600 (Visitor)", description: "Du lịch, thăm thân, công tác ngắn hạn.", image: "/images/services/ca-super.png", icon: "hiking", detailId: "au-600" },
-        { title: "Visa Công Tác (Business)", description: "Khảo sát thị trường, dự hội nghị.", image: "/images/services/au-600.png", icon: "business_center", detailId: "au-600" },
-        { title: "Visa Thăm Thân (Family)", description: "Thăm con cái, người thân bảo lãnh.", image: "/images/services/au-600.png", icon: "family_restroom", detailId: "au-600" },
+        { title: "Visa Công Tác (Business)", description: "Khảo sát thị trường, dự hội nghị.", image: "/images/services/au-business.png", icon: "business_center", detailId: "au-600" },
+        { title: "Visa Thăm Thân (Family)", description: "Thăm con cái, người thân bảo lãnh.", image: "/images/services/au-family.png", icon: "family_restroom", detailId: "au-600" },
     ],
     process: [
         { number: 1, title: "Nộp Online", description: "Tạo tài khoản ImmiAccount và nộp hồ sơ.", icon: "computer" },
@@ -215,7 +215,7 @@ export const PAGES: Record<string, PageData> = {
     services: [
         { title: "Visitor Visa", description: "Du lịch tự túc, nộp online qua RealMe.", image: "/images/services/jp-tourist.png", icon: "landscape", detailId: "nz-visitor" },
         { title: "Visa Thăm Thân", description: "Thăm con du học hoặc người thân.", image: "/images/services/nz-visitor.png", icon: "family_restroom", detailId: "nz-family" },
-        { title: "Visa Nhóm (Group)", description: "Gia đình nộp chung hồ sơ, xét duyệt cùng lúc.", image: "/images/services/nz-visitor.png", icon: "groups", detailId: "nz-visitor" },
+        { title: "Visa Nhóm (Group)", description: "Gia đình nộp chung hồ sơ, xét duyệt cùng lúc.", image: "/images/services/nz-group.png", icon: "groups", detailId: "nz-visitor" },
     ],
     process: [
         { number: 1, title: "Chuẩn Bị", description: "Dịch thuật công chứng toàn bộ hồ sơ.", icon: "translate" },
@@ -244,7 +244,7 @@ export const PAGES: Record<string, PageData> = {
     services: [
         { title: "Visa Du Lịch Tự Túc", description: "Single Entry (3 tháng), lưu trú 15 ngày.", image: "/images/services/jp-business.png", icon: "photo_camera", detailId: "jp-tourist" },
         { title: "Visa Công Tác", description: "Thương mại, hội nghị. Cần thư mời gốc.", image: "/images/services/jp-tourist.png", icon: "business_center", detailId: "jp-business" },
-        { title: "Visa Thăm Thân", description: "Thăm người thân, bạn bè đang sống tại Nhật.", image: "/images/services/jp-tourist.png", icon: "family_restroom", detailId: "jp-tourist" },
+        { title: "Visa Thăm Thân", description: "Thăm người thân, bạn bè đang sống tại Nhật.", image: "/images/services/jp-family.png", icon: "family_restroom", detailId: "jp-tourist" },
     ],
     process: [
         { number: 1, title: "Chuẩn Bị", description: "Hồ sơ bản gốc, sắp xếp theo thứ tự.", icon: "folder_special" },
@@ -302,7 +302,7 @@ export const PAGES: Record<string, PageData> = {
       services: [
           { title: "Visa Du Lịch (L)", description: "3 tháng 1 lần, lưu trú 15-30 ngày. Thủ tục đơn giản.", image: "/images/services/cn-tourist.png", icon: "camera_alt", detailId: "cn-tourist" },
           { title: "Visa Thương Mại (M)", description: "Dành cho đối tác kinh doanh, hội chợ Canton Fair.", image: "/images/services/cn-business.png", icon: "store", detailId: "cn-business" },
-          { title: "Visa 6 Tháng/1 Năm", description: "Nhập cảnh nhiều lần (Multiple) cho khách đi thường xuyên.", image: "/images/services/cn-business.png", icon: "repeat", detailId: "cn-business" },
+          { title: "Visa 6 Tháng/1 Năm", description: "Nhập cảnh nhiều lần (Multiple) cho khách đi thường xuyên.", image: "/images/services/cn-multiple.png", icon: "repeat", detailId: "cn-business" },
       ],
       process: [
         { number: 1, title: "Khai COVA", description: "Điền tờ khai tiếng Trung/Anh cực chuẩn xác.", icon: "description" },
@@ -360,7 +360,7 @@ export const PAGES: Record<string, PageData> = {
       services: [
           { title: "E-Visa (Miễn Thị Thực TAC)", description: "Dành cho khách có visa Mỹ, Úc, Nhật, Âu... còn hạn hoặc hết hạn <10 năm.", image: "/images/services/tw-tac.png", icon: "travel_explore", detailId: "tw-tac" },
           { title: "Visa Du Lịch Dán (Hồ sơ)", description: "Nộp trực tiếp tại văn phòng kinh tế Đài Bắc (TECO).", image: "/images/services/tw-sticker.png", icon: "article", detailId: "tw-sticker" },
-          { title: "Visa Quan Hồng (Đoàn)", description: "Dành cho đoàn du lịch qua công ty lữ hành chỉ định.", image: "/images/services/tw-sticker.png", icon: "groups", detailId: "tw-sticker" },
+          { title: "Visa Quan Hồng (Đoàn)", description: "Dành cho đoàn du lịch qua công ty lữ hành chỉ định.", image: "/images/services/tw-group.png", icon: "groups", detailId: "tw-sticker" },
       ],
       process: [
         { number: 1, title: "Check Điều Kiện", description: "Kiểm tra xem có đủ điều kiện làm TAC miễn phí không.", icon: "fact_check" },
@@ -475,7 +475,7 @@ export const PAGES: Record<string, PageData> = {
       stats: [{ icon: "verified", label: "Tỷ Lệ Đậu", value: "99%" }, ...COMMON_STATS, { icon: "timer", label: "Xét Duyệt", value: "3-5 Ngày" }],
       services: [
           { title: "E-Visa Du Lịch 30 Ngày", description: "Nhập cảnh 2 lần (Double Entry).", image: "/images/services/in-tourist.png", icon: "temple_hindu", detailId: "in-tourist" },
-          { title: "E-Visa 1 Năm / 5 Năm", description: "Nhập cảnh nhiều lần (Multiple Entry).", image: "/images/services/in-tourist.png", icon: "history_edu", detailId: "in-tourist" },
+          { title: "E-Visa 1 Năm / 5 Năm", description: "Nhập cảnh nhiều lần (Multiple Entry).", image: "/images/services/in-multiple.png", icon: "history_edu", detailId: "in-tourist" },
           { title: "E-Visa Thương Mại", description: "Dành cho doanh nhân, thời hạn 1 năm.", image: "/images/services/in-business.png", icon: "business_center", detailId: "in-business" },
       ],
       process: [
