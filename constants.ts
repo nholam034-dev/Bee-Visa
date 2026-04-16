@@ -4,7 +4,7 @@ import { CUSTOM_SYSTEM_PROMPT, CUSTOM_KNOWLEDGE_BASE } from "./ai_data";
 
 export const DEFAULT_SITE_CONFIG: SiteConfig = {
   brandName: "BEETOURS",
-  logoUrl: "", // Để trống sẽ hiển thị chữ B mặc định
+  logoUrl: "/images/logo.png",
   tagline: "Book Easy Easy",
   hotline: "1900-0310",
   email: "info@beetours.com",
