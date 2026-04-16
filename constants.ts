@@ -773,6 +773,59 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
       faq: []
   },
 
+  // ================= KOREA =================
+  "kr-tourist": {
+      id: "kr-tourist",
+      parentId: "korea",
+      title: "Visa Du Lịch Hàn Quốc (Tự Túc)",
+      heroImage: "/images/services/kr-tourist.png",
+      overview: "Visa du lịch Hàn Quốc (C-3-9) dành cho người nhập cảnh với mục đích tham quan, giải trí. Điểm đặc thù của visa Hàn Quốc là yêu cầu Sổ tiết kiệm cực kỳ nghiêm ngặt (phải lùi ngày hoặc gửi trên 1 tháng). Hồ sơ nộp qua Trung tâm tiếp nhận visa KVAC, và đôi khi bạn sẽ bị gọi phỏng vấn qua điện thoại bằng tiếng Việt để kiểm tra tính trung thực của lịch trình.",
+      benefits: ["Thời gian xét duyệt trung bình 10-15 ngày làm việc", "Được cấp visa Single Entry (3 tháng) lưu trú 15-30 ngày", "Tỷ lệ đậu cao nếu tài chính và công việc ổn định, logic"],
+      requirements: [
+          { title: "Hồ sơ cá nhân", items: ["Hộ chiếu gốc (Còn hạn > 6 tháng)", "Tờ khai xin visa dán ảnh thẻ 3.5x4.5 (Nền trắng, áo tối màu)", "Bản sao CCCD và Khai sinh"] },
+          { title: "Chứng minh tài chính (Rất Khắt Khe)", items: ["Sổ tiết kiệm bản gốc (Tối thiểu 100-200 triệu, kỳ hạn > 3 tháng, đã gửi ít nhất 1 tháng trước khi nộp)", "Xác nhận số dư ngân hàng (Bản song ngữ cấp trong vòng 14 ngày)", "Giấy tờ nhà đất, xe hơi (Nếu có)"] },
+          { title: "Chứng minh công việc", items: ["Người lao động: Hợp đồng lao động, Sao kê lương 3 tháng, Đơn xin nghỉ phép", "Chủ doanh nghiệp: Đăng ký kinh doanh, Biên lai nộp thuế 3 tháng gần nhất", "Học sinh/Sinh viên: Xác nhận sinh viên, thẻ sinh viên"] }
+      ],
+      faq: [
+          { question: "Sinh viên hoặc nội trợ không có thu nhập thì sao?", answer: "Bạn cần người bảo lãnh (Bố/Mẹ/Vợ/Chồng). Cần phải chứng minh được tài chính và công việc của người bảo lãnh kèm giấy tờ chứng minh mối quan hệ (Khai sinh, Đăng ký kết hôn)." },
+          { question: "Không có sổ tiết kiệm thì có nộp được không?", answer: "Tuỳ trường hợp. Nếu bạn đã từng có visa cấp trong vòng 5 năm của các nước Mỹ, Canada, Châu Âu, Úc, New Zealand, bạn có thể được xét duyệt dễ thở hơn hoặc nộp sang dạng Đại Đô Thị nếu áp dụng. Nếu hộ chiếu trắng, bắt buộc phải có sổ tiết kiệm." }
+      ]
+  },
+  "kr-5year": {
+      id: "kr-5year",
+      parentId: "korea",
+      title: "Visa Đại Đô Thị Hàn Quốc (5 Năm)",
+      heroImage: "/images/services/kr-5year.png",
+      overview: "Visa Đại Đô Thị (Multiple Entry 5 Years) là đặc quyền ưu tiên của Lãnh sự Hàn Quốc dành cho công dân có Hộ khẩu hoặc Đăng ký thường trú/tạm trú dài hạn tại 3 thành phố: Hà Nội, Đà Nẵng, TP.HCM. Diện này giúp bạn được MIỄN hoàn toàn việc nộp Sổ tiết kiệm. Bạn có thể tự do nhập cảnh Hàn Quốc nhiều lần trong 5 năm (mỗi lần lưu trú 30 ngày).",
+      benefits: ["Giảm trừ khối lượng giấy tờ đáng kể: Không cần sổ tiết kiệm, không cần chứng minh thu nhập tài chính gay gắt", "Visa 5 năm Multiple Entry (Đi lúc nào cũng được trong 5 năm)", "Thích hợp cho dân văn phòng, kinh doanh hay bay Hàn Quốc"],
+      requirements: [
+          { title: "Điều kiện tiên quyết (Rất quan trọng)", items: ["Sổ hộ khẩu (Bản gốc hoặc bản công chứng trên cổng Dịch vụ công) HOẶC Giấy xác nhận thông tin cư trú (CT07) thể hiện đã lưu trú liên tục > 1 năm tại HN/ĐN/HCM"] },
+          { title: "Hồ sơ cơ bản", items: ["Hộ chiếu gốc (Ký tên)", "01 Ảnh 3.5x4.5cm nền trắng chụp dưới 6 tháng", "CCCD bản sao công chứng rõ mặt"] },
+          { title: "Hồ sơ công việc (Khuyến cáo nộp chuẩn)", items: ["Tuy diện 5 năm không bắt chứng minh tài chính, nhưng bạn BẮT BUỘC phải chứng minh nghề nghiệp rõ ràng để Lãnh sự tin tưởng bạn là 'Công dân kiểu mẫu'. Cần: HĐLĐ, Xác nhận nghề nghiệp, BHYT/BHXH (VssID)."] }
+      ],
+      faq: [
+          { question: "Tôi có KT3 tại TP.HCM được 2 năm có nộp diện này được không?", answer: "ĐƯỢC. Bạn ra Công an phường/xã xin mẫu CT07 (Trích lục thông tin cư trú) để chứng minh thời gian lưu trú tại đại đô thị. Tuy nhiên mã số định danh trên CCCD phải trùng khớp thông tin." },
+          { question: "Nếu tôi thất nghiệp ở HN 5 năm thì xin có đậu không?", answer: "RẤT KHÓ. Diện đại đô thị miễn chứng minh sổ tiết kiệm nhưng lại soi công việc chặt hơn. Nếu hồ sơ trắng công việc, rủi ro đánh rớt do 'Không có ràng buộc tại VN' là rất cao." }
+      ]
+  },
+  "kr-business": {
+      id: "kr-business",
+      parentId: "korea",
+      title: "Visa Công Tác Thương Mại Hàn Quốc",
+      heroImage: "/images/services/kr-business.png",
+      overview: "Visa Công tác Hàn Quốc (C-3-4) cấp cho chuyên gia, bộ phận kỹ thuật, hoặc lãnh đạo doanh nghiệp sang Hàn tham quan máy móc, k‎ý kết hợp đồng, thương thảo đầu tư. Đây là diện Visa liên quan tới hợp tác 2 doanh nghiệp, do đó tính logic của hồ sơ phụ thuộc vào Bộ Giấy Tờ Của Cả Việt Nam & Hàn Quốc gửi về.",
+      benefits: ["Nâng cao độ uy tín của Hộ chiếu nhanh chóng", "Lãnh sự xét duyệt ưu tiên hơn diện du lịch (Nếu giải trình tính cấp bách)", "Xin được Multiple (nhiều lần) nếu quy mô hợp tác lớn hoặc từng đi công tác Hàn nhiều lần"],
+      requirements: [
+          { title: "Hồ sơ phía Hàn Quốc (Bên Mời)", items: ["Thư mời bản gốc (Dấu mộc tròn đỏ)", "Bản sao ĐKKD của công ty Hàn Quốc (Giấy chứng nhận nộp thuế)", "Lịch trình công tác chi tiết", "Giấy bảo lãnh (Theo mẫu LSQ)"] },
+          { title: "Hồ sơ phía Việt Nam (Bên Cử)", items: ["Quyết định cử đi công tác (Bản tiếng Việt/Anh có dấu công ty)", "Hóa đơn/Bằng chứng quan hệ hợp tác 2 bên (Invoice, hợp đồng, email làm việc...)", "Bản sao ĐKKD của công ty Việt Nam + Biên lai nộp thuế"] },
+          { title: "Hồ sơ cá nhân người đi", items: ["Hợp đồng lao động, Quyết định bổ nhiệm", "Bảng lương 3 tháng", "BHXH (Sổ bìa hoặc in từ VssID)"] }
+      ],
+      faq: [
+          { question: "Trường hợp công ty tôi mới thành lập có xin được không?", answer: "Có thể xin nhưng rủi ro cao. Bạn cần bổ sung nhiều bằng chứng hơn để chứng thực quan hệ mua bán với bên Hàn (Thanh toán LC, hợp đồng mẫu, hình ảnh)." },
+          { question: "Tôi muốn xin vào làm việc dài hạn (kỹ sư E-7) dùng visa này được không?", answer: "KHÔNG ĐƯỢC. Visa C-3-4 tuyệt đối nghiêm cấm làm việc sinh lời, nhận lương tại Hàn Quốc. Nó chỉ phục vụ công tác, họp hành ngắn ngày (tối đa 90 ngày)." }
+      ]
+  },
+
   // ================= NEW ZEALAND (UPDATED) =================
   "nz-visitor": {
       id: "nz-visitor",
