@@ -419,7 +419,30 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onNavigateHome }
 
             {activeTab === 'leads' && (
                 <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                    <div className="flex justify-between items-center mb-6"><h2 className="text-2xl font-black text-slate-800">Danh Sách Khách Hàng (Leads)</h2><button onClick={refreshData} className="text-primary hover:underline text-sm font-bold flex items-center gap-1"><span className="material-symbols-outlined text-sm">refresh</span>Làm mới</button></div>
+                    <div className="flex justify-between items-center mb-6">
+                        <h2 className="text-2xl font-black text-slate-800">Danh Sách Khách Hàng (Leads)</h2>
+                        <div className="flex items-center gap-3">
+                            <button onClick={refreshData} className="text-primary hover:underline text-sm font-bold flex items-center gap-1"><span className="material-symbols-outlined text-sm">refresh</span>Làm mới</button>
+                            <button onClick={() => {
+                                const headers = ["Ngày", "Khách Hàng", "Điện Thoại", "Email", "Nguồn", "Ghi Chú", "Trạng Thái"];
+                                const rows = leads.map(lead => [
+                                    lead.createdAt?.toDate ? lead.createdAt.toDate().toLocaleDateString('vi-VN') : 'N/A',
+                                    `"${(lead.name || '').replace(/"/g, '""')}"`,
+                                    `"${(lead.phone || '').replace(/"/g, '""')}"`,
+                                    `"${(lead.email || '').replace(/"/g, '""')}"`,
+                                    `"${(lead.source || '').replace(/"/g, '""')}"`,
+                                    `"${(lead.note || '').replace(/"/g, '""')}"`,
+                                    lead.status
+                                ]);
+                                const csvContent = [headers.join(","), ...rows.map(r => r.join(","))].join("\\n");
+                                const blob = new Blob(["\\uFEFF" + csvContent], { type: 'text/csv;charset=utf-8;' });
+                                const link = document.createElement("a");
+                                link.href = URL.createObjectURL(blob);
+                                link.download = `Beetours_Khach_Hang_${new Date().toISOString().slice(0,10)}.csv`;
+                                link.click();
+                            }} className="bg-green-600 hover:bg-green-700 text-white text-sm font-bold py-1.5 px-3 rounded-lg flex items-center gap-1 shadow-sm transition-all"><span className="material-symbols-outlined text-sm">download</span>Xuất CSV</button>
+                        </div>
+                    </div>
                     <div className="overflow-x-auto">
                         <table className="w-full text-sm text-left text-slate-600">
                             <thead className="bg-gray-50 text-slate-700 uppercase font-bold text-xs"><tr><th className="px-4 py-3">Ngày</th><th className="px-4 py-3">Khách Hàng</th><th className="px-4 py-3">Liên Hệ</th><th className="px-4 py-3">Nguồn</th><th className="px-4 py-3">Ghi Chú</th><th className="px-4 py-3">Trạng Thái</th></tr></thead>
