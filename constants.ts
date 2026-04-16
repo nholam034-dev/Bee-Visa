@@ -1264,9 +1264,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetailData> = {
   "schengen-germany": { id: "schengen-germany", parentId: "schengen", title: "Visa Đức", heroImage: "", overview: "Visa công tác/du lịch Đức.", benefits: [], requirements: [], faq: [] },
   "schengen-italy": { id: "schengen-italy", parentId: "schengen", title: "Visa Ý", heroImage: "", overview: "Visa du lịch Ý.", benefits: [], requirements: [], faq: [] },
   "au-500": { id: "au-500", parentId: "australia", title: "Visa Du Học Úc", heroImage: "", overview: "Visa du học Úc.", benefits: [], requirements: [], faq: [] },
-  "au-462": { id: "au-462", parentId: "australia", title: "Visa Lao Động Kỳ Nghỉ", heroImage: "", overview: "Work & Holiday Visa.", benefits: [], requirements: [], faq: [] },
-  "kr-tourist": { id: "kr-tourist", parentId: "korea", title: "Visa Du Lịch Hàn", heroImage: "", overview: "Visa C-3-9.", benefits: [], requirements: [], faq: [] },
-  "kr-business": { id: "kr-business", parentId: "korea", title: "Visa Công Tác Hàn", heroImage: "", overview: "Visa thương mại.", benefits: [], requirements: [], faq: [] },
+  "au-462": { id: "au-462", parentId: "australia", title: "Visa Lao Động Kỳ Nghỉ", heroImage: "", overview: "Work & Holiday Visa.", benefits: [], requirements: [], faq: [] }
 };
 
 // =========================================================================================
