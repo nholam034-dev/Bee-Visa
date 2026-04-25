@@ -255,7 +255,6 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, data }) => {
                   {TESTIMONIALS.map((item) => (
                       <div key={item.id} className="bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-3xl hover:bg-white/10 transition-colors">
                           <div className="flex items-center gap-4 mb-6">
-                              <img src={item.image} alt={item.name} className="w-12 h-12 rounded-full object-cover border-2 border-secondary" />
                               <div>
                                   <h5 className="font-bold text-white">{item.name}</h5>
                                   <p className="text-xs text-slate-400 uppercase tracking-wider">{item.visa}</p>
